@@ -1,4 +1,4 @@
-![scrot1](https://i.imgur.com/sSGGQfJ.jpg)
+# Dotfiles 
 
 Simple dotfiles repository using stow
 
