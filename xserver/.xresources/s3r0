@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                      S3R0                                   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #1F1F1F
+!Foreground
+#define fg      #C0B18B
+
+!COLOR 0
+#define blk     #4A3637
+!COLOR 1
+#define red     #D17B49
+!COLOR 2
+#define grn     #7B8748
+!COLOR 3
+#define ylw     #AF865A
+!COLOR 4
+#define blu     #535C5C
+!COLOR 5
+#define mag     #775759
+!COLOR 6
+#define cyn     #6D715E
+!COLOR 7
+#define wht     #C0B18B
+!COLOR 8
+#define bblk    #4A3637
+!COLOR 9
+#define bred    #D17B49
+!COLOR 10
+#define bgrn    #7B8748
+!COLOR 11
+#define bylw    #AF865A
+!COLOR 12
+#define bblu    #535C5C
+!COLOR 13
+#define bmag    #775759
+!COLOR 14
+#define bcyn    #6D715E
+!COLOR 15
+#define bwht    #C0B18B

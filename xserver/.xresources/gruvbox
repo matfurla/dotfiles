@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                  GRUVBOX                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #1D2021
+!Foreground
+#define fg      #EBDBB2
+
+!COLOR 0
+#define blk     #1D2021
+!COLOR 1
+#define red     #CC241D
+!COLOR 2
+#define grn     #98971A
+!COLOR 3
+#define ylw     #D79921
+!COLOR 4
+#define blu     #458588
+!COLOR 5
+#define mag     #B16286
+!COLOR 6
+#define cyn     #689D6A
+!COLOR 7
+#define wht     #EBDBB2
+!COLOR 8
+#define bblk    #333637
+!COLOR 9
+#define bred    #FB4934
+!COLOR 10
+#define bgrn    #B8BB26
+!COLOR 11
+#define bylw    #FABD2F
+!COLOR 12
+#define bblu    #83A598
+!COLOR 13
+#define bmag    #D3869B
+!COLOR 14
+#define bcyn    #8EC07D
+!COLOR 15
+#define bwht    #FBF1C7

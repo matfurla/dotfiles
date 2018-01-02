@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                    SLATE                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #242A2B
+!Foreground
+#define fg      #939381
+
+!COLOR 0
+#define blk     #242B2C
+!COLOR 1
+#define red     #674839
+!COLOR 2
+#define grn     #6E794F
+!COLOR 3
+#define ylw     #8D8150
+!COLOR 4
+#define blu     #3B474E
+!COLOR 5
+#define mag     #554C41
+!COLOR 6
+#define cyn     #495355
+!COLOR 7
+#define wht     #939381
+!COLOR 8
+#define bblk    #393F40
+!COLOR 9
+#define bred    #674839
+!COLOR 10
+#define bgrn    #6E794F
+!COLOR 11
+#define bylw    #8D8150
+!COLOR 12
+#define bblu    #3B474E
+!COLOR 13
+#define bmag    #554C41
+!COLOR 14
+#define bcyn    #495355
+!COLOR 15
+#define bwht    #ABAB9C

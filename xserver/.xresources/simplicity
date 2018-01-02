@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                  SIMPLICITY                                 !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #28282C
+!Foreground
+#define fg      #F3F3F3
+
+!COLOR 0
+#define blk     #29292D
+!COLOR 1
+#define red     #BF5C56
+!COLOR 2
+#define grn     #97B19C
+!COLOR 3
+#define ylw     #D7BD8A
+!COLOR 4
+#define blu     #545F72
+!COLOR 5
+#define mag     #A18673
+!COLOR 6
+#define cyn     #75909F
+!COLOR 7
+#define wht     #E9E9E9
+!COLOR 8
+#define bblk    #404047
+!COLOR 9
+#define bred    #BF5C56
+!COLOR 10
+#define bgrn    #97B19C
+!COLOR 11
+#define bylw    #D7BD8A
+!COLOR 12
+#define bblu    #545f72
+!COLOR 13
+#define bmag    #A18673
+!COLOR 14
+#define bcyn    #BE926B
+!COLOR 15
+#define bwht    #F4F4F2

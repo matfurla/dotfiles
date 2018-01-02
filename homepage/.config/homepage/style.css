@@ -1,0 +1,81 @@
+body {
+	background-color: #1D2021;
+	color: #CC241D !important;
+}
+
+div[class^="books"], div [class*="books"] {
+	font-family: "lemon" !important;
+	font-size: 10px !important;
+}
+
+a, a:link {
+	   color: #EBDBB2 !important;
+	   text-decoration: none !important;
+}
+
+a:hover {
+	color: #98971A !important;
+	text-decoration: none !important;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	text-align: left !important;
+	padding-left: 13px !important;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+	text-align: left;
+}
+
+ul li:after {
+	color: #D79921 !important;
+	content: " //" !important;
+}
+
+ul li:last-child:after {
+	content: "" !important;
+}
+
+div.books {
+	margin-left: 30% !important;
+	text-align: left !important;
+	padding-left: 0px;
+	display: table;
+
+	position: absolute;
+	left: 0px;
+	top: 30%;
+}
+
+div.books2 {
+	margin-right: 70% !important;
+	text-align: right !important;
+	color: #b8b8b8
+	float: right;
+	display: table;
+
+	position: absolute;
+	right: 0px;
+	top: 30%;
+}
+
+ul li#books2 {
+	float: right !important;
+}
+
+ul li#books2:after {
+	content: "" !important;
+}
+
+.mascot {
+	width: 30%;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}

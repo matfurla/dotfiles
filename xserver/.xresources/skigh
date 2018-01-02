@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                    SKIGH                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #252A32
+!Foreground
+#define fg      #BAB7B5
+
+!COLOR 0
+#define blk     #272C34
+!COLOR 1
+#define red     #876058
+!COLOR 2
+#define grn     #6F7F71
+!COLOR 3
+#define ylw     #B39580
+!COLOR 4
+#define blu     #546780
+!COLOR 5
+#define mag     #84787D
+!COLOR 6
+#define cyn     #556F86
+!COLOR 7
+#define wht     #BAB7B5
+!COLOR 8
+#define bblk    #3B434F
+!COLOR 9
+#define bred    #876058
+!COLOR 10
+#define bgrn    #6F7F71
+!COLOR 11
+#define bylw    #B39580
+!COLOR 12
+#define bblu    #546780
+!COLOR 13
+#define bmag    #84787D
+!COLOR 14
+#define bcyn    #556F86
+!COLOR 15
+#define bwht    #DFDEED

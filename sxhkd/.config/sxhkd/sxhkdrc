@@ -1,0 +1,137 @@
+###################################################
+#                   SXHKD CONFIG                  #
+###################################################
+## Update Sxhkd
+super + shift + r
+    pkill -USR1 -x sxhkd
+
+## Quit Bspwm
+super + alt + Escape
+    bspc quit
+
+## Close Window
+super + {_,shift + }w
+    bspc node -{c,k}
+
+###################################################
+#                      STATE                      #
+###################################################
+## Window State
+super + {t,shift + t,s,f}
+    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+## Flags
+super + ctrl + {x,y,z}
+    bspc node -g {locked,sticky,private}
+
+###################################################
+#                      FOCUS                      #
+###################################################
+## Focus Node Direction
+super + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
+
+## Focus Node Given Path Jump
+super + {p,b,comma,period}
+    bspc node -f @{parent,brother,first,second}
+
+## Focus Next/Previous Node
+super + {_,shift + }c
+    bspc node -f {next,prev}
+
+## Focus Next/Previous Desktop
+super + bracket{left,right}
+    bspc desktop -f {prev,next}
+
+## Focus Last Node/Desktop
+super + {grave,Tab}
+    bspc {node,desktop} -f last
+
+## Focus Older/Newer Node
+super + {o,i}
+    bspc wm -h off; \
+    bspc node {older,newer} -f; \
+    bspc wm -h on
+
+## Focus/Send To Desktop
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+###################################################
+#                    PRESELECT                    #
+###################################################
+## Preselect Direction
+super + ctrl + {Left,Down,Up,Right}
+    bspc node -p {west,south,north,east}
+
+## Preselect Ratio
+super + ctrl + {1-9}
+    bspc node -o 0.{1-9}
+
+## Cancel Preselection Node
+super + ctrl + space
+    bspc node -p cancel
+
+## Cancel Preselection Desktop
+super + ctrl + shift + space
+    bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+###################################################
+#                   MOVE-RESIZE                   #
+###################################################
+## Expand Window
+super + alt + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+## Contract Window
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+## Move Floating Window
+super + {h,j,k,l}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+###################################################
+#                      CUSTOM                     #
+###################################################
+## Terminal
+super + Return
+    urxvtc
+
+## Launcher
+super + space
+    rofi -show drun
+
+## Launcher Script
+super + q
+    rofi-menu
+
+## MPC Play
+XF86AudioPlay
+    mpc toggle
+
+## MPC Prev/Next
+super + XF86Audio{Lower,Raise}Volume
+    {mpc prev, mpc next}
+
+## Vol Up
+XF86AudioRaiseVolume
+    amixer set Master on ;\
+    amixer -q sset Master 5%+
+
+## Vol Down
+XF86AudioLowerVolume
+    amixer set Master on ;\
+    amixer -q sset Master 5%-
+
+## Vol Mute
+XF86AudioMute
+    amixer -q sset Master toggle
+
+## Screenshot
+Print
+    screenshot
+
+## Screenshot Selected Window
+super + Print
+    screenshot-selected

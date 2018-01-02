@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                    CYBER                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #11292E
+!Foreground
+#define fg      #E0f2EC
+
+!COLOR 0
+#define blk     #0E1F22
+!COLOR 1
+#define red     #A85659
+!COLOR 2
+#define grn     #668E8C
+!COLOR 3
+#define ylw     #C3B6A4
+!COLOR 4
+#define blu     #326D78
+!COLOR 5
+#define mag     #433C32
+!COLOR 6
+#define cyn     #386E74
+!COLOR 7
+#define wht     #E0f2EC
+!COLOR 8
+#define bblk    #1C4B4E
+!COLOR 9
+#define bred    #EB8995
+!COLOR 10
+#define bgrn    #82AEA9
+!COLOR 11
+#define bylw    #E1D9CE
+!COLOR 12
+#define bblu    #A7D2CD
+!COLOR 13
+#define bmag    #AA9576
+!COLOR 14
+#define bcyn    #90C0BD
+!COLOR 15
+#define bwht    #F0F8F3

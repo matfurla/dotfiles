@@ -1,0 +1,5 @@
+#!/bin/sh
+###################################################
+#              SCREENSHOT SELECTED                #
+###################################################
+maim -i $(xdotool selectwindow) ~/Desktop/$(date +%F-%T).png --hidecursor

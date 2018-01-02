@@ -1,0 +1,31 @@
+#!/bin/sh
+###################################################
+#                   EXPORT CSS                    #
+###################################################
+. "$HOME/.config/scripts/colors"
+
+###################################################
+#                       FILE                      #
+###################################################
+cat > $HOME/.mozilla/colors.css <<-EOCFG
+:root {
+  --bg: $bg;
+  --fg: $fg;
+  --blk: $color0;
+  --red: $color1;
+  --grn: $color2;
+  --ylw: $color3;
+  --blu: $color4;
+  --mag: $color5;
+  --cyn: $color6;
+  --wht: $color7;
+  --bblk: $color8;
+  --bred: $color9;
+  --bgrn: $color10;
+  --bylw: $color11;
+  --bblu: $color12;
+  --bmag: $color13;
+  --bcyn: $color14;
+  --bwht: $color15;
+}
+EOCFG

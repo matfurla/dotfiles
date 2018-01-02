@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                      DEPTH                                  !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #2C2833
+!Foreground
+#define fg      #DBD7B8
+
+!COLOR 0
+#define blk     #322D39
+!COLOR 1
+#define red     #BF6257
+!COLOR 2
+#define grn     #82A37C
+!COLOR 3
+#define ylw     #B7A16C
+!COLOR 4
+#define blu     #6D6A80
+!COLOR 5
+#define mag     #825969
+!COLOR 6
+#define cyn     #938E8f
+!COLOR 7
+#define wht     #DBD7B8
+!COLOR 8
+#define bblk    #4E4955
+!COLOR 9
+#define bred    #BF6257
+!COLOR 10
+#define bgrn    #82A37C
+!COLOR 11
+#define bylw    #B7A1UC
+!COLOR 12
+#define bblu    #6D6A80
+!COLOR 13
+#define bmag    #825969
+!COLOR 14
+#define bcyn    #938E8F
+!COLOR 15
+#define bwht    #DBD7B8

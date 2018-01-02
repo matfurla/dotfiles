@@ -1,0 +1,131 @@
+#!/bin/bash
+###################################################
+#                   ROFI BOOKMARKS                #
+###################################################
+BROWSER="$BROWSER"
+EDITOR="$EDITOR"
+root="$HOME/.config/bookmarks"
+
+cd "${root}"
+if [[ $gitsupport == "1" ]]; then
+    if [[ ! -d .git ]]; then
+        git init
+    fi
+fi
+
+main () {
+MSG=""
+OPT=""
+if [[ $gitsupport == "1" ]]
+then
+    MSG="Alt+p: Pull/Push changes"
+    OPT="-kb-custom-3 Alt+p"
+fi
+
+        help_text="$(echo -e "Enter: Abrir URL - Alt+E: Editar Favorito\nAlt+N: Adicionar aos Favoritos - ${MSG}" | column -s '-' -t | perl -pe "s/ - //g")"
+        line1=$(echo "${help_text}" | head -1)
+        line2=$(echo "${help_text}" | tail -1)
+        HELP="${line1}
+${line2}"
+
+
+files="$(find . \( ! -regex '.*/\..*' \) -type f \
+    | cut -c 3- \
+    | roficmd -dmenu -mesg "${HELP}" \
+    -kb-custom-1 "Alt+e" -kb-custom-2 "Alt+n" ${OPT} -p "Favoritos: ")"
+
+val=$?
+
+if [[ $val -eq 10 ]]; then
+    echo "${files}" | while read line; do
+        $EDITOR "$(echo "${line}" &)"
+    done
+elif [[ $val -eq 0 ]]; then
+    echo "${files}" | while read line; do
+        $BROWSER "$(head -1 "${line}")"
+    done
+elif [[ $val -eq 1 ]]; then
+    exit
+elif [[ $val -eq 11 ]]; then
+    addBookmark
+elif [[ $val -eq 12 ]]; then
+    pushpullChanges
+fi
+}
+
+pushpullChanges() {
+    if [[ $gitsupport == "1" ]]
+    then
+        cd "${root}"
+        git push
+        git pull
+    fi
+    main
+}
+
+addBookmark() {
+    url=$(echo "" | roficmd -dmenu -mesg "Aperte Ctrl+v para copiar do Clipboard ou digite a URL manualmente" -p "URL > ")
+    val=$?
+    if [[ $val -eq 1 ]]; then
+        exit
+    elif [[ $val -eq 0 ]]; then
+        :
+    fi
+    domain=$(python2 -c "from urlparse import urlparse; url = urlparse('$url'); print url.netloc")
+    val=$?
+    if [[ $val -eq 1 ]]; then
+        exit
+    elif [[ $val -eq 0 ]]; then
+        group=$(find . \( ! -regex '.*/\..*' \) -type d | cut -c 3- | tail -n +2 | roficmd -dmenu -p "Grupo > " -mesg "Escolha um GRUPO ou digite um novo > ")
+        val=$?
+        if [[ $val -eq 1 ]]; then
+            exit
+        elif [[ $val -eq 0 ]]; then
+            :
+        fi
+        filename=$(echo -e "${domain}" | roficmd -dmenu -mesg "Escolha o nome do ARQUIVO" -p "Nome > ")
+        val=$?
+        if [[ $val -eq 1 ]]; then
+            exit
+        elif [[ $val -eq 0 ]]; then
+            if [[ $filename == "" ]]; then
+                filename="${domain}"
+            fi
+        fi
+        if [[ -d "$group" ]]; then
+            echo "${url}" > "${group}/${filename}"
+        else
+            mkdir "${group}"
+            echo "${url}" > "${group}/${filename}"
+        fi
+    fi
+    if [[ $gitsupport == "1" ]]; then
+        cd "${root}"
+        git add "${group}/${filename}"
+        git commit -m "Added ${group}/${filename}"
+    fi
+}
+
+helpMsg() {
+    echo "robot - poor man's bookmarks manager"
+    echo "2015 Rasmus Steinke <rasi at xssn dot at>"
+    echo ""
+    echo "--add    Add a bookmark file"
+}
+
+if [[ -z "$rofiopts" ]]; then
+    roficmd () {
+        rofi -dmenu "$@"
+    }
+else
+    roficmd () {
+        rofi -dmenu $(echo "$rofiopts") "$@"
+    }
+fi
+if [[ $1 == "--add" ]]; then
+    addBookmark
+elif [[ $1 == "--help" || $1 == "-h" ]]; then
+    helpMsg
+else
+    main
+fi

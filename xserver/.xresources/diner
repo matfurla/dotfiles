@@ -1,0 +1,41 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                    DINER                                    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Background
+#define bg      #2E3738
+!Foreground
+#define fg      #ABA599
+
+!COLOR 0
+#define blk     #343C3C
+!COLOR 1
+#define red     #9C7f5D
+!COLOR 2
+#define grn     #8E958F
+!COLOR 3
+#define ylw     #B8Af97
+!COLOR 4
+#define blu     #828882
+!COLOR 5
+#define mag     #BB9A7F
+!COLOR 6
+#define cyn     #9DABA2
+!COLOR 7
+#define wht     #ABA599
+!COLOR 8
+#define bblk    #485152
+!COLOR 9
+#define bred    #9C7f5D
+!COLOR 10
+#define bgrn    #8E958F
+!COLOR 11
+#define bylw    #B8Af97
+!COLOR 12
+#define bblu    #828882
+!COLOR 13
+#define bmag    #BB9A7f
+!COLOR 14
+#define bcyn    #9DABA2
+!COLOR 15
+#define bwht    #ABA599
