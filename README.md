@@ -5,8 +5,8 @@ Simple dotfiles repository using stow
  - Distro: `Void Linux`
  - Window Manager: `bspwm`
  - Terminal: `urxvt`
- - Fonts: `lemon`, `siji` and `envypn`
- - Browser: `firefox`
+ - Fonts: `Terminus`, `lemon` and `siji`
+ - Browser: `firefox` or `chromium`
  - File Browser: `pcmanfm`
  - Editor: `neovim` and `leafpad`
  - Music Player: `mpd` with `ncmpcpp`
@@ -14,7 +14,7 @@ Simple dotfiles repository using stow
  - Launcher: `rofi`
  - Bar: `polybar`
  - GTK Theme: `numix`
- - Icon Theme: `numix-circle`
+ - Icon Theme: `numix`
 
 
 ## Installation 
@@ -41,10 +41,10 @@ Simple dotfiles repository using stow
 
 ## Preview 
 
-![scrot2](https://i.imgur.com/MpHzwIx.png)
+![scrot1](https://i.imgur.com/MpHzwIx.png)
 
-![scrot3](https://i.imgur.com/CChOqJk.png)
+![scrot2](https://i.imgur.com/CChOqJk.png)
 
-![scrot4](https://i.imgur.com/J3B9KqV.png)
+![scrot3](https://i.imgur.com/J3B9KqV.png)
 
-![scrot5](https://i.imgur.com/x893NaY.png)
+![scrot4](https://i.imgur.com/x893NaY.png)
