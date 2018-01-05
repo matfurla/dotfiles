@@ -1,6 +1,7 @@
 # .bashrc
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+
 ###################################################
 #                       PROMPT                    #
 ###################################################
@@ -22,7 +23,7 @@ fi
 #                    FUNCTIONS                    #
 ###################################################
 cd() {
-    builtin cd "$@" && ls
+    builtin cd "$@" && ls --color=auto
 }
 
 mkd () {
@@ -85,7 +86,7 @@ alias v='nvim'
 alias sv='sudo nvim'
 
 alias ld='ldmc -l'
-alias lr='sudo ldmc -r'
+alias rd='sudo ldmc -r'
 
 alias xres='nvim $HOME/.Xresources &'
 alias xload='xrdb -load ~/.Xresources'

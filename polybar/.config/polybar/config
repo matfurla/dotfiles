@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                          GENERAL	                         ;
+;                          GENERAL                           ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [bar/main]
 monitor = ${env:MONITOR:HDMI-2}
@@ -28,20 +28,20 @@ modules-right = volume memory eth date
 background = ${xrdb:background}
 foreground = ${xrdb:foreground}
 blk = ${xrdb:color0}
-bblk = ${xrdb:color8}
 red = ${xrdb:color1}
-bred = ${xrdb:color9}
 grn = ${xrdb:color2}
-bgrn = ${xrdb:color10}
 ylw = ${xrdb:color3}
-bylw = ${xrdb:color11}
 blu = ${xrdb:color4}
-bblu = ${xrdb:color12}
 mag = ${xrdb:color5}
-bmag = ${xrdb:color13}
 cyn = ${xrdb:color6}
-bcyn = ${xrdb:color14}
 wht = ${xrdb:color7}
+bblk = ${xrdb:color8}
+bred = ${xrdb:color9}
+bgrn = ${xrdb:color10}
+bylw = ${xrdb:color11}
+bblu = ${xrdb:color12}
+bmag = ${xrdb:color13}
+bcyn = ${xrdb:color14}
 bwht = ${xrdb:color15}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -90,9 +90,9 @@ icon-next = "  "
 icon-next-background = ${colors.foreground}
 icon-next-foreground = ${colors.background}
 
-label-song-maxlen = 100
+label-song-maxlen = 500
 label-song-ellipsis = false
-label-song = %{F#689D6A}%title% %{F#928374}by %{F#458588}%artist%
+label-song = %{F#689D6A}%title% %{F#333637}by %{F#458588}%artist%
 
 label-offline = mpd is offline
 label-offine-foreground = ${colors.blk}
@@ -139,7 +139,7 @@ label-background = ${colors.ylw}
 label = " %gb_used% "
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                           ETHERNET		                     ;
+;                           ETHERNET                         ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/eth]
 type = internal/network

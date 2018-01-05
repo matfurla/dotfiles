@@ -61,7 +61,7 @@ super + {_,shift + }{1-9,0}
 #                    PRESELECT                    #
 ###################################################
 ## Preselect Direction
-super + ctrl + {Left,Down,Up,Right}
+super + ctrl + {h,j,k,l}
     bspc node -p {west,south,north,east}
 
 ## Preselect Ratio
