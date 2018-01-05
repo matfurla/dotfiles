@@ -6,10 +6,10 @@
 /*       TAB BAR VARIABLES       */
 /*********************************/
     --bg-dark: var(--bg);
-    --bg-light: #575c66; 
+    --bg-light: var(--fg); 
     --fg-dark: var(--bg);
     --fg-light: var(--fg); 
-    --tab-fonts: "Lemon"; 
+    --tab-fonts: "lemon"; 
     --tab-font-size: 9pt;
     --tab-text-align: center;
     --tab-min-height: 25px !important;
@@ -17,11 +17,12 @@
 /*********************************/
 /*        URL BAR VARIABLES      */
 /*********************************/
-    --url-background: var(--bg-light); 
+    --url-background: var(--bg-dark);
     --url-foreground: var(--fg-light);
-    --url-fonts: "Lemon"; 
+    --url-fonts: "lemon"; 
     --url-font-size: 9pt;
     --url-text-align: center;
+    --toolbox-border-bottom-color: var(--url-background) !important;
 }
 
 
@@ -53,6 +54,7 @@ tab, .tabbrowser-tabs *|tab {
 .tab-label {
     -moz-box-flex: 1 !important; 
     text-align: var(--tab-text-align) !important;
+    padding: 12 0 !important;
 }
 
 /**** TAB WIDTH ****/
@@ -64,14 +66,18 @@ tab, .tabbrowser-tabs *|tab {
 /**** TAB SELECTED (DEFAULT=BG-LIGHT) ****/
 .tab-background-middle[selected="true"], .tabbrowser-tab[selected="true"], .tab-background-middle[selected="true"]:hover, .tabbrowser-tab[selected="true"]:hover {
     background: var(--bg-light) !important;
-    color: var(--fg-light) !important;
+    color: var(--fg-dark) !important;
 }
 
 /**** TAB HOVER (DEFAULT=BG-LIGHT) ****/
 .tabbrowser-tab[selected="true"][pinned="true"]:hover, .tabbrowser-tab:not([pinned]):hover, .tabs-newtab-button:hover {
     background: var(--bg-light) !important;
-    color: var(--fg-light) !important;
+    color: var(--fg-dark) !important;
     border-top: 0px !important;
+}
+
+#tab-view-deck {
+    margin-top: -1px !important;
 }
 
 /**** NEW TAB UP LINE (DEFAULT=NONE) ****/
@@ -104,7 +110,7 @@ tab, .tabbrowser-tabs *|tab {
 /*********************************/
 /*        URL BAR CONFIG         */
 /*********************************/
-#urlbar, .searchbar-textbox, urlbar-container {
+#urlbar, .searchbar-textbox, .urlbar-input-box, .urlbar-container {
     background-color: var(--url-background) !important;
     color: var(--url-foreground) !important;
     font-family: var(--url-fonts) !important;
@@ -119,13 +125,13 @@ tab, .tabbrowser-tabs *|tab {
     background-image: none !important;
     background: var(--url-background) !important;
     background-color: var(--url-background) !important;
-    margin-top: 0px !important;
     border-top: 0px !important;
     border-bottom: 0px !important;
+    border-color: var(--url-background) !important;
 }
 
 /**** URL BUTTONS (DEFAULT=NONE) ****/
-#forward-button, #back-button, #PanelUI-menu-button, #PanelUI-button, .restore-tabs-button {
+#forward-button, #back-button, #PanelUI-menu-button, #PanelUI-button, .restore-tabs-button, #identity-box, #pageActionButton {
     display: none !important;
 }
 

@@ -1,21 +1,17 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                 XRES CONFIG                                 !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-urxvt*cursorUnderline:  1
 urxvt*cursorBlink:      false
 urxvt*scrollBar:        false
 urxvt*depth:            32
 urxvt*internalBorder:   8
 urxvt*dynamicColors:    on
-URxvt.letterSpace:      -1
+urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                    FONTS                                    !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-URxvt*font:           -*-envypn-Medium-R-*-*-13-*-*-*-*-*-ISO8859-1
-URxvt*boldFont:       -*-envypn-Medium-R-*-*-13-*-*-*-*-*-ISO8859-1
-URxvt*italicFont:     -*-envypn-Medium-R-*-*-13-*-*-*-*-*-ISO8859-1
-URxvt*boldItalicFont: -*-envypn-Medium-R-*-*-13-*-*-*-*-*-ISO8859-1
+urxvt*font:     xft:terminus:size=9:antialias=true
 
 Xft.dpi:        96
 Xft.antialias:  true
@@ -28,7 +24,7 @@ Xft.rgba:       rgb
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                   COLORS                                    !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#include        </home/matheus/.xresources/gruvbox>
+#include        </home/matheus/.urxvt/gruvbox>
 
 *background:    bg
 *foreground:    fg
@@ -61,17 +57,17 @@ Xft.rgba:       rgb
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                 ROFI CONFIG                                 !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-rofi.color-window:    bg, bg, bg
-rofi.color-normal:    bg, fg, bg, red, fg
-rofi.color-active:    bg, fg, bg, bg, bg
-rofi.color-urgent:    bg, red, bg, red, fg
+rofi.color-window:   bg, bg, bg
+rofi.color-normal:   bg, fg, bg, red, fg
+rofi.color-active:   bg, fg, bg, bg, bg
+rofi.color-urgent:   bg, red, bg, red, fg
 
-rofi.font:            lemon 8
-rofi.lines:           10
-rofi.width:           30
-rofi.location:        2
-rofi.yoffset:         30
-rofi.padding:         10
-rofi.terminal:        urxvt
-rofi.hide-scrollbar:  true
-rofi.modi:            run,drun
+rofi.font:           lemon 8
+rofi.lines:          10
+rofi.width:          30
+rofi.location:       2
+rofi.yoffset:        33
+rofi.padding:        10
+rofi.terminal:       urxvtc
+rofi.hide-scrollbar: true
+rofi.modi:           run,drun

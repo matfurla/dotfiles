@@ -3,8 +3,8 @@
 #                   ROFI BOOKMARKS                #
 ###################################################
 BROWSER="$BROWSER"
-EDITOR="$EDITOR"
-root="$HOME/.config/bookmarks"
+EDITOR="leafpad"
+root="$HOME/Dotfiles/bookmarks"
 
 cd "${root}"
 if [[ $gitsupport == "1" ]]; then

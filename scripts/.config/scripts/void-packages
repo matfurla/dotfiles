@@ -1,0 +1,26 @@
+#!/bin/sh
+## Install Packages
+sudo xbps-install -Su
+sudo xbps-install xorg-minimal xorg-fonts xorg-fonts xset xsetroot terminus-font dejavu-fonts rxvt-unicode \
+                  alsa-utils alsa-lib bspwm sxhkd firefox neovim leafpad pcmanfm viewnior mpv mpd mpc rofi \
+                  polybar xarchiver unrar p7zip-unrar pass gnupg2 pinentry pinentry-gtk ldm xstow git
+
+## Configure Ethernet
+sudo cat > /etc/rc.local <<-EOCFG
+ip link set dev enp6s0 up
+ip addr add 192.168.88.249/24 brd + dev enp6s0
+ip route add default via 192.168.88.1
+EOCFG
+
+## Configure Automount
+sudo cat > /etc/ldm.conf <<-EOCFG
+MOUNT_OWNER=matheus
+BASE_MOUNTPOINT=/home/matheus/Desktop
+EOCFG
+
+## Symlink dotfiles
+git clone --depth 1 https://github.com/matfurla/dotfiles
+cd $HOME/dotfiles
+xstow bash bookmarks bspwm firefox fonts homepage mpd mpv ncmpcpp neovim numix pass polybar scripts sxhkd xserver
+cd ..
+
