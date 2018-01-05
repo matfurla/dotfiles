@@ -26,7 +26,7 @@ modules-right = volume memory eth date
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [colors]
 background = ${xrdb:background}
-foreground = ${xrdb:foreground}
+foreground = #ffffff
 blk = ${xrdb:color0}
 red = ${xrdb:color1}
 grn = ${xrdb:color2}

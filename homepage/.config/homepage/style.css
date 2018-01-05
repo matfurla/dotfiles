@@ -4,8 +4,8 @@ body {
 }
 
 div[class^="books"], div [class*="books"] {
-	font-family: "terminus" !important;
-	font-size: 11px !important;
+	font-family: "lemon" !important;
+	font-size: 9px !important;
 }
 
 a, a:link {
