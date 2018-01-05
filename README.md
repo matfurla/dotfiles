@@ -41,10 +41,10 @@ Simple dotfiles repository using stow
 
 ## Preview 
 
-![scrot1](https://i.imgur.com/MpHzwIx.png)
+![scrot1](https://i.imgur.com/wxCjvxy.png)
 
-![scrot2](https://i.imgur.com/CChOqJk.png)
+![scrot2](https://i.imgur.com/zOanHE5.png)
 
-![scrot3](https://i.imgur.com/J3B9KqV.png)
+![scrot3](https://i.imgur.com/MpHzwIx.png)
 
-![scrot4](https://i.imgur.com/x893NaY.png)
+![scrot4](https://i.imgur.com/J3B9KqV.png)
