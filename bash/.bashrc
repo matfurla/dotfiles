@@ -32,7 +32,7 @@ cd() {
     builtin cd "$@" && ls --color=auto
 }
 
-mkd () {
+mkd() {
     mkdir -p $1
     cd $1
 }
@@ -125,6 +125,6 @@ alias rasp='ssh pi@192.168.88.245'
 ## EXPORT
 export TERM='xterm-256color'
 export BROWSER='firefox'
-export VISUAL='nano'
-export EDITOR='nano'
+export VISUAL='nvim'
+export EDITOR='nvim'
 export MPD_HOST=192.168.88.249
