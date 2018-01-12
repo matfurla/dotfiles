@@ -1,0 +1,49 @@
+
+!   ██████  ▒█████   █    ██  ██▀███   ▄████▄  ▓█████  ██▀███  ▓█████  ██▀███  
+! ▒██    ▒ ▒██▒  ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓█   ▀ ▓██ ▒ ██▒▓█   ▀ ▓██ ▒ ██▒
+! ░ ▓██▄   ▒██░  ██▒▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒███   ▓██ ░▄█ ▒▒███   ▓██ ░▄█ ▒
+!   ▒   ██▒▒██   ██░▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒▒▓█  ▄ ▒██▀▀█▄  ▒▓█  ▄ ▒██▀▀█▄  
+! ▒██████▒▒░ ████▓▒░▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▒████▒░██▓ ▒██▒░▒████▒░██▓ ▒██▒
+! ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░░░ ▒░ ░░ ▒▓ ░▒▓░░░ ▒░ ░░ ▒▓ ░▒▓░
+! ░ ░▒  ░ ░  ░ ▒ ▒░ ░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ░ ░  ░  ░▒ ░ ▒░ ░ ░  ░  ░▒ ░ ▒░
+! ░  ░  ░  ░ ░ ░ ▒   ░░░ ░ ░   ░░   ░ ░           ░     ░░   ░    ░     ░░   ░ 
+!       ░      ░ ░     ░        ░     ░ ░         ░  ░   ░        ░  ░   ░     
+!                                     ░                                        
+
+!! BACKGROUND
+#define bg      #222222
+!! FOREGROUND
+#define fg      #C2C2B0
+
+!! COLOR 0
+#define blk     #111111
+!! COLOR 1
+#define red     #AA4450
+!! COLOR 2
+#define grn     #719611
+!! COLOR 3
+#define ylw     #FF9800
+!! COLOR 4
+#define blu     #6688AA
+!! COLOR 5
+#define mag     #8F6F8F
+!! COLOR 6
+#define cyn     #528B8B
+!! COLOR 7
+#define wht     #D3D3D3
+!! COLOR 8
+#define bblk    #181818
+!! COLOR 9
+#define bred    #FF6A6A
+!! COLOR 10
+#define bgrn    #B1D631
+!! COLOR 11
+#define bylw    #87875F
+!! COLOR 12
+#define bblu    #90B0D1
+!! COLOR 13
+#define bmag    #8181A6
+!! COLOR 14
+#define bcyn    #87CEEB
+!! COLOR 15
+#define bwht    #C1CDC1

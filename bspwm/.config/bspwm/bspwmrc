@@ -1,14 +1,22 @@
 #! /bin/sh
-###################################################
-#      		       COLORS                     #
-###################################################
+
+#  ▄▄▄▄     ██████  ██▓███   █     █░ ███▄ ▄███▓ ██▀███   ▄████▄   
+# ▓█████▄ ▒██    ▒ ▓██░  ██▒▓█░ █ ░█░▓██▒▀█▀ ██▒▓██ ▒ ██▒▒██▀ ▀█   
+# ▒██▒ ▄██░ ▓██▄   ▓██░ ██▓▒▒█░ █ ░█ ▓██    ▓██░▓██ ░▄█ ▒▒▓█    ▄  
+# ▒██░█▀    ▒   ██▒▒██▄█▓▒ ▒░█░ █ ░█ ▒██    ▒██ ▒██▀▀█▄  ▒▓▓▄ ▄██▒ 
+# ░▓█  ▀█▓▒██████▒▒▒██▒ ░  ░░░██▒██▓ ▒██▒   ░██▒░██▓ ▒██▒▒ ▓███▀ ░ 
+# ░▒▓███▀▒▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▓░▒ ▒  ░ ▒░   ░  ░░ ▒▓ ░▒▓░░ ░▒ ▒  ░ 
+# ▒░▒   ░ ░ ░▒  ░ ░░▒ ░       ▒ ░ ░  ░  ░      ░  ░▒ ░ ▒░  ░  ▒    
+#  ░    ░ ░  ░  ░  ░░         ░   ░  ░      ░     ░░   ░ ░         
+#  ░            ░               ░           ░      ░     ░ ░       
+#       ░                                                ░         
+
+## COLORS
 . "$HOME/.config/scripts/colors"
 
-###################################################
-#                     SETTINGS                    #
-###################################################
-bspc config border_width           1
-bspc config window_gap         	   2
+## GENERAL
+bspc config border_width           4
+bspc config window_gap         	   1
 bspc config top_padding        	   34
 bspc config left_padding       	   0
 bspc config bottom_padding    	   0
@@ -23,3 +31,6 @@ bspc monitor -d 1 2 3 4 5
 
 bspc rule -a Gimp desktop='^5' state=floating follow=on
 bspc rule -a ::Pinentry state=floating
+
+## AUTOSTART
+bar

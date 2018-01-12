@@ -1,11 +1,5 @@
 #!/bin/bash
-## Title:    GtkColor
-## Author:   dkeg
-## Modified: 2016
-###
-## update gtk color from xrdb 
-## take colors from xrdb directly, place in array, disperse
-## requires $HOME/.themes directory
+# CREATE GTK THEME BASED ON XRESOURCES
 
 # (re)load in case we forgot
 xrdb load ~/.Xresources

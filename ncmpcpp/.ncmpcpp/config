@@ -1,13 +1,21 @@
-###################################################
-#                 NCMPCPP CONFIG                  #
-###################################################
+
+#  ███▄    █  ▄████▄   ███▄ ▄███▓ ██▓███   ▄████▄   ██▓███   ██▓███  
+#  ██ ▀█   █ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓██░  ██▒▒██▀ ▀█  ▓██░  ██▒▓██░  ██▒
+# ▓██  ▀█ ██▒▒▓█    ▄ ▓██    ▓██░▓██░ ██▓▒▒▓█    ▄ ▓██░ ██▓▒▓██░ ██▓▒
+# ▓██▒  ▐▌██▒▒▓▓▄ ▄██▒▒██    ▒██ ▒██▄█▓▒ ▒▒▓▓▄ ▄██▒▒██▄█▓▒ ▒▒██▄█▓▒ ▒
+# ▒██░   ▓██░▒ ▓███▀ ░▒██▒   ░██▒▒██▒ ░  ░▒ ▓███▀ ░▒██▒ ░  ░▒██▒ ░  ░
+# ░ ▒░   ▒ ▒ ░ ░▒ ▒  ░░ ▒░   ░  ░▒▓▒░ ░  ░░ ░▒ ▒  ░▒▓▒░ ░  ░▒▓▒░ ░  ░
+# ░ ░░   ░ ▒░  ░  ▒   ░  ░      ░░▒ ░       ░  ▒   ░▒ ░     ░▒ ░     
+#    ░   ░ ░ ░        ░      ░   ░░       ░        ░░       ░░       
+#          ░ ░ ░             ░            ░ ░                        
+#            ░                            ░                          
+
+## GENERAL
 mpd_music_dir = "$HOME/Music"
 mpd_port = "6600"
 mpd_host = "192.168.88.249"
 
-###################################################
-#                     COLORS                      #
-###################################################
+## COLORS
 colors_enabled = "yes"
 empty_tag_color = "white"
 statusbar_color = "white"
@@ -16,37 +24,29 @@ state_flags_color = "white"
 main_window_color = "white"
 header_window_color = "white"
 
-###################################################
-#                   INDICATOR                     #
-###################################################
+## INDICATOR
 song_list_format = "$0%a - %t $R$0%A "
 song_columns_list_format = "(3)[]{}(92)[white]{t} (4)[green]{l}"
 song_status_format = "$3%a $0- $4%t $0"
-playlist_display_mode = "columns" (classic/columns)
+playlist_display_mode = "columns"
 now_playing_prefix = "$3───"
 playlist_disable_highlight_delay = "1"
 message_delay_time= "1"
 
-###################################################
-#                  PROGRESS BAR                   #
-###################################################
+## PROGRESS BAR
 progressbar_look = "── "
 progressbar_elapsed_color = "red"
 
-###################################################
-#                   VISUALIZER                    #
-###################################################
+## VISUALIZER
 visualizer_in_stereo = "no"
 visualizer_sync_interval = "30"
 visualizer_output_name = "fifo"
 visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_type = "spectrum" (spectrum/wave)
+visualizer_type = "spectrum"
 visualizer_color = "white"
 visualizer_look = "∙~"
 
-###################################################
-#                     MISC                        #
-###################################################
+## MISC
 display_bitrate = "no"
 autocenter_mode = "yes"
 centered_cursor = "no"

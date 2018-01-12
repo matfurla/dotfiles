@@ -9,7 +9,7 @@
     --bg-light: var(--fg); 
     --fg-dark: var(--bg);
     --fg-light: var(--fg); 
-    --tab-fonts: "lemon"; 
+    --tab-fonts: "terminus"; 
     --tab-font-size: 9pt;
     --tab-text-align: center;
     --tab-min-height: 25px !important;
@@ -19,7 +19,7 @@
 /*********************************/
     --url-background: var(--bg-dark);
     --url-foreground: var(--fg-light);
-    --url-fonts: "lemon"; 
+    --url-fonts: "terminus"; 
     --url-font-size: 9pt;
     --url-text-align: center;
     --toolbox-border-bottom-color: var(--url-background) !important;
@@ -152,4 +152,8 @@ browser[type="content-primary"], browser[type="content"] {
 
 browser, browser.display.background_color, tabbrowser tabpanels {
     background-color: var(--bg-dark) !important;
+}
+
+#page-action-buttons {
+    display: none !important;
 }

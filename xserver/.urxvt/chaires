@@ -1,41 +1,49 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                    CHAIRES                                  !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!Background
+!  ▄████▄   ██░ ██  ▄▄▄       ██▓ ██▀███  ▓█████   ██████ 
+! ▒██▀ ▀█  ▓██░ ██▒▒████▄    ▓██▒▓██ ▒ ██▒▓█   ▀ ▒██    ▒ 
+! ▒▓█    ▄ ▒██▀▀██░▒██  ▀█▄  ▒██▒▓██ ░▄█ ▒▒███   ░ ▓██▄   
+! ▒▓▓▄ ▄██▒░▓█ ░██ ░██▄▄▄▄██ ░██░▒██▀▀█▄  ▒▓█  ▄   ▒   ██▒
+! ▒ ▓███▀ ░░▓█▒░██▓ ▓█   ▓██▒░██░░██▓ ▒██▒░▒████▒▒██████▒▒
+! ░ ░▒ ▒  ░ ▒ ░░▒░▒ ▒▒   ▓▒█░░▓  ░ ▒▓ ░▒▓░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+!   ░  ▒    ▒ ░▒░ ░  ▒   ▒▒ ░ ▒ ░  ░▒ ░ ▒░ ░ ░  ░░ ░▒  ░ ░
+! ░         ░  ░░ ░  ░   ▒    ▒ ░  ░░   ░    ░   ░  ░  ░  
+! ░ ░       ░  ░  ░      ░  ░ ░     ░        ░  ░      ░  
+! ░                                                       
+
+!! BACKGROUND
 #define bg      #383844
-!Foreground
+!! FOREGROUND
 #define fg      #CDC5B7
 
-!COLOR 0
+!! COLOR 0
 #define blk     #3A3A45
-!COLOR 1
+!! COLOR 1
 #define red     #A7664A
-!COLOR 2
+!! COLOR 2
 #define grn     #6E8C6E
-!COLOR 3
+!! COLOR 3
 #define ylw     #CBA264
-!COLOR 4
+!! COLOR 4
 #define blu     #535F6B
-!COLOR 5
+!! COLOR 5
 #define mag     #775A62
-!COLOR 6
+!! COLOR 6
 #define cyn     #576E68
-!COLOR 7
+!! COLOR 7
 #define wht     #CDC5B7
-!COLOR 8
+!! COLOR 8
 #define bblk    #4F4F60
-!COLOR 9
+!! COLOR 9
 #define bred    #A7664A
-!COLOR 10
+!! COLOR 10
 #define bgrn    #6E8C6E
-!COLOR 11
+!! COLOR 11
 #define bylw    #CBA264
-!COLOR 12
+!! COLOR 12
 #define bblu    #535F6B
-!COLOR 13
+!! COLOR 13
 #define bmag    #775A62
-!COLOR 14
+!! COLOR 14
 #define bcyn    #576E68
-!COLOR 15
+!! COLOR 15
 #define bwht    #CDC5B7

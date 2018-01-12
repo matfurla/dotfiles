@@ -1,73 +1,78 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                 XRES CONFIG                                 !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-urxvt*cursorBlink:      false
-urxvt*scrollBar:        false
-urxvt*depth:            32
-urxvt*internalBorder:   8
-urxvt*dynamicColors:    on
-urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                    FONTS                                    !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-urxvt*font:     xft:terminus:size=9:antialias=true
+! ▒██   ██▒ ██▀███  ▓█████   ██████  ▒█████   █    ██  ██▀███   ▄████▄  ▓█████   ██████ 
+! ▒▒ █ █ ▒░▓██ ▒ ██▒▓█   ▀ ▒██    ▒ ▒██▒  ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓█   ▀ ▒██    ▒ 
+! ░░  █   ░▓██ ░▄█ ▒▒███   ░ ▓██▄   ▒██░  ██▒▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒███   ░ ▓██▄   
+!  ░ █ █ ▒ ▒██▀▀█▄  ▒▓█  ▄   ▒   ██▒▒██   ██░▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒▒▓█  ▄   ▒   ██▒
+! ▒██▒ ▒██▒░██▓ ▒██▒░▒████▒▒██████▒▒░ ████▓▒░▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▒████▒▒██████▒▒
+! ▒▒ ░ ░▓ ░░ ▒▓ ░▒▓░░░ ▒░ ░▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+! ░░   ░▒ ░  ░▒ ░ ▒░ ░ ░  ░░ ░▒  ░ ░  ░ ▒ ▒░ ░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ░ ░  ░░ ░▒  ░ ░
+!  ░    ░    ░░   ░    ░   ░  ░  ░  ░ ░ ░ ▒   ░░░ ░ ░   ░░   ░ ░           ░   ░  ░  ░  
+!  ░    ░     ░        ░  ░      ░      ░ ░     ░        ░     ░ ░         ░  ░      ░  
+!                                                              ░                        
 
-Xft.dpi:        96
-Xft.antialias:  true
-Xft.autohint:   false
-Xft.hinting:    true
-Xft.hintstyle:  hintslight
-Xft.lcdfilter:  lcddefault
-Xft.rgba:       rgb
+!! GENERAL
+urxvt*cursorBlink:     false
+urxvt*scrollBar:       false
+urxvt*depth:           32
+urxvt*internalBorder:  8
+urxvt*dynamicColors:   on
+urxvt*perl-ext-common: default,matcher,selection-to-clipboard
+Rxvt.url-launcher:     /usr/bin/xdg-open
+URxvt.matcher.button:  1
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                   COLORS                                    !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#include        </home/matheus/.urxvt/gruvbox>
+!! FONTS
+URxvt*font:            xft:Terminus:size=9
 
-*background:    bg
-*foreground:    fg
-*.cursorColor:  fg
+Xft.dpi:               96
+Xft.antialias:         true
+Xft.hinting:           true
+Xft.hintstyle:         hintfull
+Xft.lcdfilter:         lcddefault
+Xft.rgba:              rgb
 
-*color0:        blk
-*color8:        bblk
+!! COLORS
+#include               </home/matheus/.urxvt/base16-default>
 
-*color1:        red
-*color9:        bred
+*background:           bg
+*foreground:           fg
+*.cursorColor:         fg
 
-*color2:        grn
-*color10:       bgrn
+*color0:               blk
+*color8:               bblk
 
-*color3:        ylw
-*color11:     	bylw
+*color1:               red
+*color9:               bred
 
-*color4:      	blu
-*color12:     	bblu
+*color2:               grn
+*color10:              bgrn
 
-*color5:      	mag
-*color13:     	bmag
+*color3:               ylw
+*color11:              bylw
 
-*color6:      	cyn
-*color14:     	bcyn
+*color4:               blu
+*color12:              bblu
 
-*color7:      	wht
-*color15:     	bwht
+*color5:               mag
+*color13:              bmag
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                 ROFI CONFIG                                 !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-rofi.color-window:   bg, bg, bg
-rofi.color-normal:   bg, fg, bg, red, fg
-rofi.color-active:   bg, fg, bg, bg, bg
-rofi.color-urgent:   bg, red, bg, red, fg
+*color6:     	       cyn
+*color14:    	       bcyn
 
-rofi.font:           lemon 8
-rofi.lines:          10
-rofi.width:          30
-rofi.location:       2
-rofi.yoffset:        33
-rofi.padding:        10
-rofi.terminal:       urxvtc
-rofi.hide-scrollbar: true
-rofi.modi:           run,drun
+*color7:      	       wht
+*color15:     	       bwht
+
+!! ROFI CONFIG
+rofi.color-window:     bg, bg, bg
+rofi.color-normal:     bg, fg, bg, red, fg
+rofi.color-active:     bg, fg, bg, bg, bg
+rofi.color-urgent:     bg, red, bg, red, fg
+
+rofi.font:             terminus 8
+rofi.lines:            10
+rofi.width:            30
+rofi.location:         2
+rofi.yoffset:          33
+rofi.padding:          10
+rofi.terminal:         urxvtc
+rofi.hide-scrollbar:   true
+rofi.modi:             run,drun

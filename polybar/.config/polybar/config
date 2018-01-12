@@ -1,6 +1,16 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                          GENERAL                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;  ██▓███   ▒█████   ██▓   ▓██   ██▓ ▄▄▄▄    ▄▄▄       ██▀███  
+; ▓██░  ██▒▒██▒  ██▒▓██▒    ▒██  ██▒▓█████▄ ▒████▄    ▓██ ▒ ██▒
+; ▓██░ ██▓▒▒██░  ██▒▒██░     ▒██ ██░▒██▒ ▄██▒██  ▀█▄  ▓██ ░▄█ ▒
+; ▒██▄█▓▒ ▒▒██   ██░▒██░     ░ ▐██▓░▒██░█▀  ░██▄▄▄▄██ ▒██▀▀█▄  
+; ▒██▒ ░  ░░ ████▓▒░░██████▒ ░ ██▒▓░░▓█  ▀█▓ ▓█   ▓██▒░██▓ ▒██▒ 
+; ▒▓▒░ ░  ░░ ▒░▒░▒░ ░ ▒░▓  ░  ██▒▒▒ ░▒▓███▀▒ ▒▒   ▓▒█░░ ▒▓ ░▒▓░ 
+; ░▒ ░       ░ ▒ ▒░ ░ ░ ▒  ░▓██ ░▒░ ▒░▒   ░   ▒   ▒▒ ░  ░▒ ░ ▒░ 
+; ░░       ░ ░ ░ ▒    ░ ░   ▒ ▒ ░░   ░    ░   ░   ▒     ░░   ░  
+;              ░ ░      ░  ░░ ░      ░            ░  ░   ░      
+;                           ░ ░           ░                     
+
+;; GENERAL
 [bar/main]
 monitor = ${env:MONITOR:HDMI-2}
 width = 100%
@@ -14,19 +24,17 @@ border-color = ${colors.background}
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = lemon:pixelsize=8:antialias=false;1
+font-0 = terminus:style=medium:pixelsize=9:antialias=true;1
 font-1 = siji:pixelsize=12:antialias=false;2
 
 modules-left = bspwm mpd
 modules-center =
 modules-right = volume memory eth date
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                           COLORS                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; COLORS
 [colors]
 background = ${xrdb:background}
-foreground = #ffffff
+foreground = #FFFFFF
 blk = ${xrdb:color0}
 red = ${xrdb:color1}
 grn = ${xrdb:color2}
@@ -44,15 +52,13 @@ bmag = ${xrdb:color13}
 bcyn = ${xrdb:color14}
 bwht = ${xrdb:color15}
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                            BSPWM                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BSPWM
 [module/bspwm]
 type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.bblk}
-label-focused-foreground = ${colors.wht}
+label-focused-foreground = ${colors.foreground}
 label-focused-padding = 2
 
 label-occupied = %index%
@@ -66,9 +72,7 @@ label-empty = %index%
 label-empty-foreground = ${colors.bblk}
 label-empty-padding = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                            MPD                             ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; MPD
 [module/mpd]
 type = internal/mpd
 host = 192.168.88.249
@@ -92,14 +96,12 @@ icon-next-foreground = ${colors.background}
 
 label-song-maxlen = 500
 label-song-ellipsis = false
-label-song = %{F#689D6A}%title% %{F#333637}by %{F#458588}%artist%
+include-file = $HOME/.config/polybar/mpd
 
 label-offline = mpd is offline
 label-offine-foreground = ${colors.blk}
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                          XWINDOW                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; XWINDOW
 [module/xwindow]
 type = internal/xwindow
 
@@ -109,9 +111,7 @@ label-maxlen = 100
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                           VOLUME                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; VOLUME
 [module/volume]
 type = internal/volume
 
@@ -126,9 +126,7 @@ format-muted-prefix-background = ${colors.bblk}
 label-muted-background = ${colors.red}
 label-muted = " muted "
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                           MEMORY                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;MEMORY
 [module/memory]
 type = internal/memory
 interval = 2
@@ -138,9 +136,7 @@ format-prefix-background = ${colors.bblk}
 label-background = ${colors.ylw}
 label = " %gb_used% "
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                           ETHERNET                         ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ETHERNET
 [module/eth]
 type = internal/network
 interface = enp6s0
@@ -151,9 +147,7 @@ format-connected-prefix-background = ${colors.bblk}
 label-connected-background = ${colors.grn}
 label-connected = " %local_ip% "
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;                             DATE                           ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; DATE
 [module/date]
 type = internal/date
 interval = 30

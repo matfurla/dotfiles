@@ -1,7 +1,6 @@
 #!/bin/bash
-###################################################
-#                   ROFI BOOKMARKS                #
-###################################################
+## MANAGE BOOKMARKS WITH ROFI
+
 BROWSER="$BROWSER"
 EDITOR="leafpad"
 root="$HOME/Dotfiles/bookmarks"

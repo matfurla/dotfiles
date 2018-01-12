@@ -1,13 +1,9 @@
 #!/bin/bash
-###################################################
-#                     ROFI MENU                   #
-###################################################
+## CREATE A CUSTOM ROFI MENU - USED TO MAKE COMMANDS OR CALL OTHER SCRIPTS
+
 declare -A LABELS
 declare -A COMMANDS
 
-###################################################
-#                       BANGS                     #
-###################################################
 COMMANDS["->Bookmarks"]='rofi-bookmarks'
 LABELS["->Bookmarks"]=""
 
@@ -44,9 +40,7 @@ LABELS["->Screenshot"]=""
 COMMANDS["->Screenshot-Window"]='screenshot-selected'
 LABELS["->Screenshot-Window"]=""
 
-###################################################
-#                   MENU CONFIG                   #
-###################################################
+
 function print_menu()
 {
     for key in ${!LABELS[@]}

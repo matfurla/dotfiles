@@ -1,41 +1,49 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                    VALLE                                    !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!Background
+!  ██▒   █▓ ▄▄▄       ██▓     ██▓    ▓█████ 
+! ▓██░   █▒▒████▄    ▓██▒    ▓██▒    ▓█   ▀ 
+!  ▓██  █▒░▒██  ▀█▄  ▒██░    ▒██░    ▒███   
+!   ▒██ █░░░██▄▄▄▄██ ▒██░    ▒██░    ▒▓█  ▄ 
+!    ▒▀█░   ▓█   ▓██▒░██████▒░██████▒░▒████▒
+!    ░ ▐░   ▒▒   ▓▒█░░ ▒░▓  ░░ ▒░▓  ░░░ ▒░ ░
+!    ░ ░░    ▒   ▒▒ ░░ ░ ▒  ░░ ░ ▒  ░ ░ ░  ░
+!      ░░    ░   ▒     ░ ░     ░ ░      ░   
+!       ░        ░  ░    ░  ░    ░  ░   ░  ░
+!      ░                                    
+
+!! BACKGROUND
 #define bg      #363334
-!Foreground
+!! FOREGROUND
 #define fg      #eaeaed
 
-!COLOR 0
+!! COLOR 0
 #define blk     #393638
-!COLOR 1
+!! COLOR 1
 #define red     #97544D
-!COLOR 2
+!! COLOR 2
 #define grn     #97A293
-!COLOR 3
+!! COLOR 3
 #define ylw     #C29F6F
-!COLOR 4
+!! COLOR 4
 #define blu     #5E606C
-!COLOR 5
+!! COLOR 5
 #define mag     #7A6054
-!COLOR 6
+!! COLOR 6
 #define cyn     #78746C
-!COLOR 7
+!! COLOR 7
 #define wht     #C3C1B8
-!COLOR 8
+!! COLOR 8
 #define bblk    #4A484B
-!COLOR 9
+!! COLOR 9
 #define bred    #97544D
-!COLOR 10
+!! COLOR 10
 #define bgrn    #97A293
-!COLOR 11
+!! COLOR 11
 #define bylw    #C29F6F
-!COLOR 12
+!! COLOR 12
 #define bblu    #5E606C
-!COLOR 13
+!! COLOR 13
 #define bmag    #7A6054
-!COLOR 14
+!! COLOR 14
 #define bcyn    #78746C
-!COLOR 16
+!! COLOR 15
 #define bwht    #EAEAED

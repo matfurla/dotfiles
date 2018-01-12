@@ -1,18 +1,20 @@
 #!/bin/sh
-## Reload Xresources
+## RELOAD THEME
+
+## XRESOURCES
 xrdb -load $HOME/.Xresources
 
-## Reload Polybar
-bar
-
-## Update GTK
+## GTK
 update-gtk
 
-## Update CSS
+## CSS
 update-css
 
-## Reload Bspwm
+## POLYBAR
+update-mpd
+
+## BSPWM
 $HOME/.config/bspwm/bspwmrc
 
-## Update wallpaper
+## WALLPAPER
 xsetroot -mod 10 2 -bg "$(xrdb -query|awk '/^\*color0:/ {print $2}')" -fg "$(xrdb -query|awk '/^\*color8:/ {print $2}')"

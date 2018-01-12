@@ -1,12 +1,8 @@
 #!/bin/sh
-###################################################
-#                   EXPORT CSS                    #
-###################################################
+## EXPORT XRESOURCES COLORS TO CSS - USED WITH FIREFOX AND HOMEPAGE
+
 . "$HOME/.config/scripts/colors"
 
-###################################################
-#                       FILE                      #
-###################################################
 cat > $HOME/.mozilla/colors.css <<-EOCFG
 :root {
   --bg: $bg;

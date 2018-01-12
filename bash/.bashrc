@@ -1,10 +1,18 @@
 # .bashrc
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 
-###################################################
-#                       PROMPT                    #
-###################################################
+#  ▄▄▄▄    ▄▄▄        ██████  ██░ ██  ██▀███   ▄████▄  
+# ▓█████▄ ▒████▄    ▒██    ▒ ▓██░ ██▒▓██ ▒ ██▒▒██▀ ▀█  
+# ▒██▒ ▄██▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░▓██ ░▄█ ▒▒▓█    ▄ 
+# ▒██░█▀  ░██▄▄▄▄██   ▒   ██▒░▓█ ░██ ▒██▀▀█▄  ▒▓▓▄ ▄██▒
+# ░▓█  ▀█▓ ▓█   ▓██▒▒██████▒▒░▓█▒░██▓░██▓ ▒██▒▒ ▓███▀ ░
+# ░▒▓███▀▒ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒░ ▒▓ ░▒▓░░ ░▒ ▒  ░
+# ▒░▒   ░   ▒   ▒▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░  ░▒ ░ ▒░  ░  ▒   
+#  ░    ░   ░   ▒   ░  ░  ░   ░  ░░ ░  ░░   ░ ░        
+#  ░            ░  ░      ░   ░  ░  ░   ░     ░ ░      
+#       ░                                     ░        
+
+## PROMPT
+[[ $- != *i* ]] && return
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
@@ -19,9 +27,7 @@ if [ "$color_prompt" = yes ]; then
     PS1="  ──────  \[\e[0m\]"
 fi
 
-###################################################
-#                    FUNCTIONS                    #
-###################################################
+## FUNCTIONS
 cd() {
     builtin cd "$@" && ls --color=auto
 }
@@ -67,9 +73,15 @@ function extract {
 fi
 }
 
-###################################################
-#                    ALIASES                      #
-###################################################
+# Convert video to gif file.
+# Usage: video2gif video_file (scale) (fps)
+video2gif() {
+  ffmpeg -y -i "${1}" -vf fps=${3:-10},scale=${2:-1920}:-1:flags=lanczos,palettegen "${1}.png"
+  ffmpeg -i "${1}" -i "${1}.png" -filter_complex "fps=${3:-10},scale=${2:-1920}:-1:flags=lanczos[x];[x][1:v]paletteuse" "${1}".gif
+  rm "${1}.png"
+}
+
+## ALIASES
 alias sd='sudo'
 alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
@@ -91,26 +103,13 @@ alias pull='git pull'
 alias commit='git commit -m'
 alias push='git push --set-upstream origin master'
 
-alias ddt='cd $HOME/Desktop'
-alias ddf='cd $HOME/Dotfiles'
-alias ddl='cd $HOME/Downloads'
-alias ds='cd $HOME/.config/scripts'
-alias dtheme='cd $HOME/.urxvt'
-alias dhd='cd /mnt'
-
-alias vbash='$EDITOR $HOME/.bashrc'
-alias lbash='leafpad $HOME/.bashrc'
-alias vxinit='$EDITOR $HOME/.xinitrc'
-alias lxinit='leafpad $HOME/.xinitrc'
-alias vxres='$EDITOR $HOME/.Xresources'
-alias lxres='leafpad $HOME/.Xresources'
+alias dt='cd $HOME/Desktop'
+alias df='cd $HOME/Dotfiles'
+alias dl='cd $HOME/Downloads'
+alias s='cd $HOME/.config/scripts'
+alias theme='cd $HOME/.urxvt'
+alias hd='cd /mnt'
 alias xload='xrdb -load $HOME/.Xresources'
-alias vbspwm='$EDITOR $HOME/.config/bspwm/bspwmrc'
-alias lbspwm='leafpad $HOME/.config/bspwm/bspwmrc'
-alias vsxhkd='$EDITOR $HOME/.config/sxhkd/sxhkdrc'
-alias lsxhkd='leafpad $HOME/.config/sxhkd/sxhkdrc'
-alias vpolybar='$EDITOR $HOME/.config/polybar/config'
-alias lpolybar='leafpad $HOME/.config/polybar/config'
 
 alias m='ncmpcpp'
 alias play='mpc toggle'
@@ -123,11 +122,9 @@ alias mute='amixer -q sset Master toggle'
 
 alias rasp='ssh pi@192.168.88.245'
 
-###################################################
-#                     EXPORT                      #
-###################################################
+## EXPORT
 export TERM='xterm-256color'
 export BROWSER='firefox'
-export VISUAL='nvim'
-export EDITOR='nvim'
+export VISUAL='nano'
+export EDITOR='nano'
 export MPD_HOST=192.168.88.249

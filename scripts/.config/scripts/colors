@@ -1,7 +1,6 @@
 #!/bin/sh
-###################################################
-#                      COLORS                     #
-###################################################
+## GRAB XRESOURCES COLORS - USED WITH OTHER SCRIPTS 
+
 bg=$(xrdb -query | awk '/background/ {print $2}')
 fg=$(xrdb -query | awk '/foreground/ {print $2}')
 color0=$(xrdb -query | awk '/^\*color0:/  {print $2}')

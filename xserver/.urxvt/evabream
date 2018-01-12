@@ -1,41 +1,49 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                   EVABREAM                                  !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!Background
+! ▓█████ ██▒   █▓ ▄▄▄       ▄▄▄▄    ██▀███  ▓█████ ▄▄▄       ███▄ ▄███▓
+! ▓█   ▀▓██░   █▒▒████▄    ▓█████▄ ▓██ ▒ ██▒▓█   ▀▒████▄    ▓██▒▀█▀ ██▒
+! ▒███   ▓██  █▒░▒██  ▀█▄  ▒██▒ ▄██▓██ ░▄█ ▒▒███  ▒██  ▀█▄  ▓██    ▓██░
+! ▒▓█  ▄  ▒██ █░░░██▄▄▄▄██ ▒██░█▀  ▒██▀▀█▄  ▒▓█  ▄░██▄▄▄▄██ ▒██    ▒██ 
+! ░▒████▒  ▒▀█░   ▓█   ▓██▒░▓█  ▀█▓░██▓ ▒██▒░▒████▒▓█   ▓██▒▒██▒   ░██▒
+! ░░ ▒░ ░  ░ ▐░   ▒▒   ▓▒█░░▒▓███▀▒░ ▒▓ ░▒▓░░░ ▒░ ░▒▒   ▓▒█░░ ▒░   ░  ░
+!  ░ ░  ░  ░ ░░    ▒   ▒▒ ░▒░▒   ░   ░▒ ░ ▒░ ░ ░  ░ ▒   ▒▒ ░░  ░      ░
+!    ░       ░░    ░   ▒    ░    ░   ░░   ░    ░    ░   ▒   ░      ░   
+!    ░  ░     ░        ░  ░ ░         ░        ░  ░     ░  ░       ░   
+!            ░                   ░                                     
+
+!! BACKGROUND
 #define bg      #151B1A
-!Foreground
+!! FOREGROUND
 #define fg      #8FA388
 
-!COLOR 0
+!! COLOR 0
 #define blk     #2E2B38
-!COLOR 1
+!! COLOR 1
 #define red     #984E66
-!COLOR 2
+!! COLOR 2
 #define grn     #7A8C54
-!COLOR 3
+!! COLOR 3
 #define ylw     #9E6438
-!COLOR 4
+!! COLOR 4
 #define blu     #395667
-!COLOR 5
+!! COLOR 5
 #define mag     #9D916B
-!COLOR 6
+!! COLOR 6
 #define cyn     #536556
-!COLOR 7
+!! COLOR 7
 #define wht     #828181
-!COLOR 8
+!! COLOR 8
 #define bblk    #474159
-!COLOR 9
+!! COLOR 9
 #define bred    #A86D56
-!COLOR 10
+!! COLOR 10
 #define bgrn    #9FB274
-!COLOR 11
+!! COLOR 11
 #define bylw    #B29F5E
-!COLOR 12
+!! COLOR 12
 #define bblu    #507A91
-!COLOR 13
+!! COLOR 13
 #define bmag    #B89855
-!COLOR 14
+!! COLOR 14
 #define bcyn    #7E9982
-!COLOR 15
+!! COLOR 15
 #define bwht    #BDBDA4

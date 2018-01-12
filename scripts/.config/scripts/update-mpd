@@ -1,0 +1,8 @@
+#!/bin/sh
+## UPDATE MPD POLYBAR COLORS BASED ON XRESOURCES
+
+. "$HOME/.config/scripts/colors"
+
+cat > $HOME/.config/polybar/mpd <<-EOCFG
+label-song = %{F$color6}%title% %{F$color8}by %{F$color4}%artist%
+EOCFG

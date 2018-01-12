@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
+## MANAGE GNUPG PASS WITH ROFI
 
-###################################################
-#                    ROFI PASS                    #
-###################################################
 basecommand="$0"
 
 # set default settings

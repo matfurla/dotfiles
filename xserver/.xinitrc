@@ -1,34 +1,42 @@
 #!/bin/sh
-## Update Colors
+
+# ▒██   ██▒ ██▓ ███▄    █  ██▓▄▄▄█████▓ 
+# ▒▒ █ █ ▒░▓██▒ ██ ▀█   █ ▓██▒▓  ██▒ ▓▒ 
+# ░░  █   ░▒██▒▓██  ▀█ ██▒▒██▒▒ ▓██░ ▒░ 
+#  ░ █ █ ▒ ░██░▓██▒  ▐▌██▒░██░░ ▓██▓ ░  
+# ▒██▒ ▒██▒░██░▒██░   ▓██░░██░  ▒██▒ ░  
+# ▒▒ ░ ░▓ ░░▓  ░ ▒░   ▒ ▒ ░▓    ▒ ░░    
+# ░░   ░▒ ░ ▒ ░░ ░░   ░ ▒░ ▒ ░    ░     
+#  ░    ░   ▒ ░   ░   ░ ░  ▒ ░  ░       
+#  ░    ░   ░           ░  ░            
+
+## LOAD .XRESOURCES                                         
 xrdb -load $HOME/.Xresources
 
-## Fonts
-xset +fp $HOME/.fonts
+## FONTS
+xset +fp $HOME/local/share/fonts
 xset fp rehash
 
-## Change Keyboard
+## KEYBOARD
 setxkbmap -model abnt2 -layout br -variant abnt2 -option terminate:ctrl_alt_bksp
 
-## Change Color Range
+## COLOR RANGE
 xrandr --output HDMI2 --set "Broadcast RGB" "Full"
 
-## Change cursor
+## CURSOR
 xsetroot -cursor_name left_ptr
 
-## Wallpaper
+## WALLPAPER
 xsetroot -mod 10 2 -bg "$(xrdb -query|awk '/^\*color0:/ {print $2}')" -fg "$(xrdb -query|awk '/^\*color8:/ {print $2}')"
 
-## Mpd
+## MPD
 mpd
 
-## Polybar
-bar
-
-## Urxvt Daemon
+## URXVT
 urxvtd -q -f -o
 
-## Sxhkd
+## SXHKD
 sxhkd &
 
-## Wm
+## WM
 exec bspwm

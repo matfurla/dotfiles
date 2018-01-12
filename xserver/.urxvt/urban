@@ -1,41 +1,49 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                    URBAN                                    !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!Background
+!  █    ██  ██▀███   ▄▄▄▄    ▄▄▄       ███▄    █ 
+!  ██  ▓██▒▓██ ▒ ██▒▓█████▄ ▒████▄     ██ ▀█   █ 
+! ▓██  ▒██░▓██ ░▄█ ▒▒██▒ ▄██▒██  ▀█▄  ▓██  ▀█ ██▒
+! ▓▓█  ░██░▒██▀▀█▄  ▒██░█▀  ░██▄▄▄▄██ ▓██▒  ▐▌██▒
+! ▒▒█████▓ ░██▓ ▒██▒░▓█  ▀█▓ ▓█   ▓██▒▒██░   ▓██░
+! ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░▒▓███▀▒ ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
+! ░░▒░ ░ ░   ░▒ ░ ▒░▒░▒   ░   ▒   ▒▒ ░░ ░░   ░ ▒░
+!  ░░░ ░ ░   ░░   ░  ░    ░   ░   ▒      ░   ░ ░ 
+!    ░        ░      ░            ░  ░         ░ 
+!                         ░                      
+
+!! BACKGROUND
 #define bg      #312E39
-!Foreground
+!! FOREGROUND
 #define fg      #C0A79A
 
-!COLOR 0
+!! COLOR 0
 #define blk     #33303B
-!COLOR 1
+!! COLOR 1
 #define red     #87404F
-!COLOR 2
+!! COLOR 2
 #define grn     #74934E
-!COLOR 3
+!! COLOR 3
 #define ylw     #AE835A
-!COLOR 4
+!! COLOR 4
 #define blu     #615772
-!COLOR 5
+!! COLOR 5
 #define mag     #783E57
-!COLOR 6
+!! COLOR 6
 #define cyn     #554757
-!COLOR 7
+!! COLOR 7
 #define wht     #C0A79A
-!COLOR 8
+!! COLOR 8
 #define bblk    #4F4B58
-!COLOR 9
+!! COLOR 9
 #define bred    #87404F
-!COLOR 10
+!! COLOR 10
 #define bgrn    #74934E
-!COLOR 11
+!! COLOR 11
 #define bylw    #AE835A
-!COLOR 12
+!! COLOR 12
 #define bblu    #615772
-!COLOR 13
+!! COLOR 13
 #define bmag    #783E57
-!COLOR 14
+!! COLOR 14
 #define bcyn    #554757
-!COLOR 16
+!! COLOR 15
 #define bwht    #C0A79A

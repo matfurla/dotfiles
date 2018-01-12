@@ -1,0 +1,49 @@
+
+!  ███▄    █  ▄▄▄    ██▒   █▓▓██   ██▓
+!  ██ ▀█   █ ▒████▄ ▓██░   █▒ ▒██  ██▒
+! ▓██  ▀█ ██▒▒██  ▀█▄▓██  █▒░  ▒██ ██░
+! ▓██▒  ▐▌██▒░██▄▄▄▄██▒██ █░░  ░ ▐██▓░
+! ▒██░   ▓██░ ▓█   ▓██▒▒▀█░    ░ ██▒▓░
+! ░ ▒░   ▒ ▒  ▒▒   ▓▒█░░ ▐░     ██▒▒▒ 
+! ░ ░░   ░ ▒░  ▒   ▒▒ ░░ ░░   ▓██ ░▒░ 
+!    ░   ░ ░   ░   ▒     ░░   ▒ ▒ ░░  
+!          ░       ░  ░   ░   ░ ░     
+!                        ░    ░ ░     
+
+!! BACKGROUND
+#define bg      #021B21
+!! FOREGROUND
+#define fg      #E8DFD6
+
+!! COLOR 0
+#define blk     #032C36
+!! COLOR 1
+#define red     #C2454E
+!! COLOR 2
+#define grn     #7CBF9E
+!! COLOR 3
+#define ylw     #8A7A63
+!! COLOR 4
+#define blu     #2E3340
+!! COLOR 5
+#define mag     #FF5879
+!! COLOR 6
+#define cyn     #44B5B1
+!! COLOR 7
+#define wht     #F2F1B9
+!! COLOR 8
+#define bblk    #065F73
+!! COLOR 9
+#define bred    #EF5847
+!! COLOR 10
+#define bgrn    #A2D9B1
+!! COLOR 11
+#define bylw    #BEB090
+!! COLOR 12
+#define bblu    #61778D
+!! COLOR 13
+#define bmag    #FF99A1
+!! COLOR 14
+#define bcyn    #9ED9D8
+!! COLOR 15
+#define bwht    #F6F6C9

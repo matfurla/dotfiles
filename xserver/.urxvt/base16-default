@@ -1,41 +1,49 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                               BASE16-DEFAULT                                !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!Background
+!  ▄▄▄▄    ▄▄▄        ██████ ▓█████    ▓█████▄ ▓█████   █████▒▄▄▄       █    ██  ██▓  ▄▄▄█████▓
+! ▓█████▄ ▒████▄    ▒██    ▒ ▓█   ▀    ▒██▀ ██▌▓█   ▀ ▓██   ▒▒████▄     ██  ▓██▒▓██▒  ▓  ██▒ ▓▒
+! ▒██▒ ▄██▒██  ▀█▄  ░ ▓██▄   ▒███      ░██   █▌▒███   ▒████ ░▒██  ▀█▄  ▓██  ▒██░▒██░  ▒ ▓██░ ▒░
+! ▒██░█▀  ░██▄▄▄▄██   ▒   ██▒▒▓█  ▄    ░▓█▄   ▌▒▓█  ▄ ░▓█▒  ░░██▄▄▄▄██ ▓▓█  ░██░▒██░  ░ ▓██▓ ░ 
+! ░▓█  ▀█▓ ▓█   ▓██▒▒██████▒▒░▒████▒   ░▒████▓ ░▒████▒░▒█░    ▓█   ▓██▒▒▒█████▓ ░██████▒▒██▒ ░ 
+! ░▒▓███▀▒ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░░░ ▒░ ░    ▒▒▓  ▒ ░░ ▒░ ░ ▒ ░    ▒▒   ▓▒█░░▒▓▒ ▒ ▒ ░ ▒░▓  ░▒ ░░   
+! ▒░▒   ░   ▒   ▒▒ ░░ ░▒  ░ ░ ░ ░  ░    ░ ▒  ▒  ░ ░  ░ ░       ▒   ▒▒ ░░░▒░ ░ ░ ░ ░ ▒  ░  ░    
+!  ░    ░   ░   ▒   ░  ░  ░     ░       ░ ░  ░    ░    ░ ░     ░   ▒    ░░░ ░ ░   ░ ░   ░      
+!  ░            ░  ░      ░     ░  ░      ░       ░  ░             ░  ░   ░         ░  ░       
+!       ░                               ░                                                      
+
+!! BACKGROUND
 #define bg      #151515
-!Foreground
+!! FOREGROUND
 #define fg      #D0D0D0
 
-!COLOR 0
+!! COLOR 0
 #define blk     #151515
-!COLOR 1
+!! COLOR 1
 #define red     #AC4142
-!COLOR 2
+!! COLOR 2
 #define grn     #90A959
-!COLOR 3
+!! COLOR 3
 #define ylw     #F4BF75
-!COLOR 4
+!! COLOR 4
 #define blu     #6A9FB5
-!COLOR 5
+!! COLOR 5
 #define mag     #AA759F
-!COLOR 6
+!! COLOR 6
 #define cyn     #75B5AA
-!COLOR 7
+!! COLOR 7
 #define wht     #D0D0D0
-!COLOR 8
+!! COLOR 8
 #define bblk    #434343
-!COLOR 9
+!! COLOR 9
 #define bred    #AC4142
-!COLOR 10
+!! COLOR 10
 #define bgrn    #90A959
-!COLOR 11
+!! COLOR 11
 #define bylw    #F4BF75
-!COLOR 12
+!! COLOR 12
 #define bblu    #6A9fB5
-!COLOR 13
+!! COLOR 13
 #define bmag    #AA759F
-!COLOR 14
+!! COLOR 14
 #define bcyn    #75B5AA
-!COLOR 15
+!! COLOR 15
 #define bwht    #F5F5F5
