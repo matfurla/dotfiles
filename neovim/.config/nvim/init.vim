@@ -1,48 +1,16 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
-"       Amir Salihefendic
-"       http://amix.dk - amix@amix.dk
-"
-" Version: 
-"       6.0 - 01/04/17 14:24:34 
-"
-" Blog_post: 
-"       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
-"
-" Awesome_version:
-"       Get this config, nice color schemes and lots of plugins!
-"
-"       Install the awesome version from:
-"
-"           https://github.com/amix/vimrc
-"
-" Syntax_highlighted:
-"       http://amix.dk/vim/vimrc.html
-"
-" Raw_version: 
-"       http://amix.dk/vim/vimrc.txt
-"
-" Sections:
-"    -> General
-"    -> VIM user interface
-"    -> Colors and Fonts
-"    -> Files and backups
-"    -> Text, tab and indent related
-"    -> Visual mode related
-"    -> Moving around, tabs and buffers
-"    -> Status line
-"    -> Editing mappings
-"    -> vimgrep searching and cope displaying
-"    -> Spell checking
-"    -> Misc
-"    -> Helper functions
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"  ███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓
+"  ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒
+" ▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░
+" ▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░  ▒██ █░░░██░▒██    ▒██ 
+" ▒██░   ▓██░░▒████▒░ ████▓▒░   ▒▀█░  ░██░▒██▒   ░██▒
+" ░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░    ░ ▐░  ░▓  ░ ▒░   ░  ░
+" ░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░    ░ ░░   ▒ ░░  ░      ░
+"    ░   ░ ░    ░   ░ ░ ░ ▒       ░░   ▒ ░░      ░   
+"          ░    ░  ░    ░ ░        ░   ░         ░   
+"                               ░                  
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"## GENERAL
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -68,9 +36,7 @@ command W w !sudo tee % > /dev/null
 set number
 set relativenumber
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"## USER-INTERFACE
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -143,31 +109,9 @@ endif
 set foldcolumn=1
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"## COLORS-FONTS
 " Enable syntax highlighting
 syntax enable 
-
-" Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
-
-try
-    colorscheme desert
-catch
-endtry
-
-set background=dark
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
-    set t_Co=256
-    set guitablabel=%M\ %t
-endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -279,7 +223,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -314,20 +258,6 @@ if has("autocmd")
     autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Spell checking
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
-
-" Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -342,59 +272,3 @@ map <leader>x :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Helper functions
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Returns true if paste mode is enabled
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    endif
-    return ''
-endfunction
-
-" Don't close window, when deleting a buffer
-command! Bclose call <SID>BufcloseCloseIt()
-function! <SID>BufcloseCloseIt()
-   let l:currentBufNum = bufnr("%")
-   let l:alternateBufNum = bufnr("#")
-
-   if buflisted(l:alternateBufNum)
-     buffer #
-   else
-     bnext
-   endif
-
-   if bufnr("%") == l:currentBufNum
-     new
-   endif
-
-   if buflisted(l:currentBufNum)
-     execute("bdelete! ".l:currentBufNum)
-   endif
-endfunction
-
-function! CmdLine(str)
-    exe "menu Foo.Bar :" . a:str
-    emenu Foo.Bar
-    unmenu Foo
-endfunction 
-
-function! VisualSelection(direction, extra_filter) range
-    let l:saved_reg = @"
-    execute "normal! vgvy"
-
-    let l:pattern = escape(@", "\\/.*'$^~[]")
-    let l:pattern = substitute(l:pattern, "\n$", "", "")
-
-    if a:direction == 'gv'
-        call CmdLine("Ack '" . l:pattern . "' " )
-    elseif a:direction == 'replace'
-        call CmdLine("%s" . '/'. l:pattern . '/')
-    endif
-
-    let @/ = l:pattern
-    let @" = l:saved_reg
-endfunction

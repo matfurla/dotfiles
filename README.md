@@ -1,12 +1,23 @@
-# Dotfiles 
+
+
+  ▓█████▄  ▒█████  ▄▄▄█████▓  █████▒██▓ ██▓    ▓█████   ██████ 
+  ▒██▀ ██▌▒██▒  ██▒▓  ██▒ ▓▒▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
+  ░██   █▌▒██░  ██▒▒ ▓██░ ▒░▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   
+  ░▓█▄   ▌▒██   ██░░ ▓██▓ ░ ░▓█▒  ░░██░▒██░    ▒▓█  ▄   ▒   ██▒
+  ░▒████▓ ░ ████▓▒░  ▒██▒ ░ ░▒█░   ░██░░██████▒░▒████▒▒██████▒▒
+   ▒▒▓  ▒ ░ ▒░▒░▒░   ▒ ░░    ▒ ░   ░▓  ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+   ░ ▒  ▒   ░ ▒ ▒░     ░     ░      ▒ ░░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░
+   ░ ░  ░ ░ ░ ░ ▒    ░       ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  
+     ░        ░ ░                   ░      ░  ░   ░  ░      ░  
+   ░                                                           
 
 Simple dotfiles repository using stow
 
  - Distro: `Void Linux`
  - Window Manager: `bspwm`
  - Terminal: `urxvt`
- - Fonts: `Terminus`, `lemon` and `siji`
- - Browser: `firefox` or `chromium`
+ - Fonts: `Terminus` and `siji`
+ - Browser: `firefox`
  - File Browser: `pcmanfm`
  - Editor: `neovim` and `leafpad`
  - Music Player: `mpd` with `ncmpcpp`
@@ -28,9 +39,9 @@ Simple dotfiles repository using stow
 
 ## Observation 
 
- - All color themes are located in `$HOME/.xresources` folder, but to use them you first need to change the `$HOME/.Xresources` file to match the desired color. This method was created and used by dkeg -> Read about it [here](https://github.com/dkeg/crayolo)
+ - All color themes are located in `$HOME/.urxvt` folder, but to use them you first need to change the `$HOME/.Xresources` file to match the desired color. This method was created and used by dkeg -> Read about it [here](https://github.com/dkeg/crayolo)
 
- - After chosing the color you simply need to run the `update-theme` script. It should update `bspwm`, `.Xresources`, `GTK` and `Firefox` colors.
+ - After chosing the color you simply need to run the `update-theme` script. It should update `bspwm`, `.Xresources`, `GTK`, `Firefox` and the wallpaper colors.
 
  - The GTK colors also came from `$HOME/.Xresources`. To update just these run the script `update-gtk`. This method was created and used by dkeg -> Read about it [here](https://github.com/dkeg/inspin/blob/master/gtkColor).
  

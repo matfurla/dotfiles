@@ -116,7 +116,7 @@ super + space
 super + q
     rofi-menu
 
-## MPC Play
+## MPC Toggle
 XF86AudioPlay
     mpc toggle
 

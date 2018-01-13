@@ -1,0 +1,8 @@
+@import url('file:///home/matheus/.mozilla/colors.css');
+
+@-moz-document url(http://192.168.88.245/homepage/) {
+  body { 
+    background-color: #151515 !important;
+    color: #CC241D !important;
+  }
+}

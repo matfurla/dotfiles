@@ -15,7 +15,7 @@
 . "$HOME/.config/scripts/colors"
 
 ## GENERAL
-bspc config border_width           4
+bspc config border_width           1
 bspc config window_gap         	   1
 bspc config top_padding        	   34
 bspc config left_padding       	   0

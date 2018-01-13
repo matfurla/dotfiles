@@ -29,7 +29,7 @@ song_list_format =                   "$0%a - %t $R$0%A "
 song_columns_list_format =           "(3)[]{}(92)[white]{t} (4)[green]{l}"
 song_status_format =                 "$3%a $0- $4%t $0"
 playlist_display_mode =              "columns"
-now_playing_prefix =                 "$3──╼"
+now_playing_prefix =                 "$3───╼"
 playlist_disable_highlight_delay =   "1"
 message_delay_time=                  "1"
 

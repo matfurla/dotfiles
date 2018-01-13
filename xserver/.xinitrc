@@ -21,7 +21,7 @@ xset fp rehash
 setxkbmap -model abnt2 -layout br -variant abnt2 -option terminate:ctrl_alt_bksp
 
 ## COLOR RANGE
-xrandr --output HDMI2 --set "Broadcast RGB" "Full"
+#xrandr --output HDMI2 --set "Broadcast RGB" "Full"
 
 ## CURSOR
 xsetroot -cursor_name left_ptr

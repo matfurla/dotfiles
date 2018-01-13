@@ -24,7 +24,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1="  ──────  \[\e[0m\]"
+    PS1="  ────╼  \[\e[0m\]"
 fi
 
 ## FUNCTIONS
@@ -99,6 +99,7 @@ alias r='sudo xbps-remove -R'
 alias c='sudo xbps-remove -Oo'
 
 alias status='git status'
+alias add='git add --all'
 alias pull='git pull'
 alias commit='git commit -m'
 alias push='git push --set-upstream origin master'
