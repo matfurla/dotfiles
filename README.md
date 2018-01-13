@@ -10,7 +10,6 @@
    ░ ░  ░ ░ ░ ░ ▒    ░       ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  
      ░        ░ ░                   ░      ░  ░   ░  ░      ░  
    ░                                                           
-```
 
 Simple dotfiles repository using stow
 
@@ -28,6 +27,7 @@ Simple dotfiles repository using stow
  - GTK Theme: `numix`
  - Icon Theme: `numix`
 
+```
 
 ## Installation 
 
