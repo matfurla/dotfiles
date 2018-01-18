@@ -21,7 +21,7 @@ Rxvt.url-launcher:     /usr/bin/xdg-open
 URxvt.matcher.button:  1
 
 !! FONTS
-URxvt*font:            xft:Terminus:size=9
+URxvt*font:            xft:terminus:size=9
 
 Xft.dpi:               96
 Xft.antialias:         true
@@ -31,7 +31,7 @@ Xft.lcdfilter:         lcddefault
 Xft.rgba:              rgb
 
 !! COLORS
-#include               </home/matheus/.urxvt/base16-default>
+#include               </home/matheus/.urxvt/sourcerer>
 
 *background:           bg
 *foreground:           fg

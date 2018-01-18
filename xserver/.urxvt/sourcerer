@@ -32,7 +32,7 @@
 !! COLOR 7
 #define wht     #D3D3D3
 !! COLOR 8
-#define bblk    #181818
+#define bblk    #434343
 !! COLOR 9
 #define bred    #FF6A6A
 !! COLOR 10

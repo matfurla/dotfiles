@@ -25,3 +25,42 @@ cat > $HOME/.mozilla/colors.css <<-EOCFG
   --bwht: $color15;
 }
 EOCFG
+
+cat > $HOME/.mozilla/firefox/gvtlmpbn.default/chrome/userContent.css <<-EOCFG
+:root {
+  --bg: $bg;
+  --fg: $fg;
+  --blk: $color0;
+  --red: $color1;
+  --grn: $color2;
+  --ylw: $color3;
+  --blu: $color4;
+  --mag: $color5;
+  --cyn: $color6;
+  --wht: $color7;
+  --bblk: $color8;
+  --bred: $color9;
+  --bgrn: $color10;
+  --bylw: $color11;
+  --bblu: $color12;
+  --bmag: $color13;
+  --bcyn: $color14;
+  --bwht: $color15;
+}
+
+@-moz-document url(http://192.168.88.245/homepage/) {
+     body {
+         background-color: var(--bg) !important;
+         color: var(--red) !important;
+    }
+     a, a:link {
+         color: var(--fg) !important;
+    }
+     a:hover {
+         color: var(--grn) !important;
+    }
+     ul li:after {
+         color: var(--ylw) !important;
+    }
+}
+EOCFG

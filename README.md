@@ -13,19 +13,19 @@
 
 Simple dotfiles repository using stow
 
-  Distro > ..................... Void Linux
-  Window Manager > ............. bspwm
-  Terminal > ................... urxvt
-  Fonts > ...................... terminus, siji
-  Browser > .................... firefox
-  File Browser > ............... pcmanfm
-  Editor > ..................... neovim, leafpad
-  Music Player > ............... mpd, ncmpcpp
-  Media Player > ............... mpv
-  Launcher > ................... rofi
-  Bar > ........................ polybar
-  GTK Theme > .................. numix
-  Icon Theme > ................. numix
+  Distro ..................... Void Linux
+  Window Manager ............. bspwm
+  Terminal ................... urxvt
+  Fonts ...................... terminus, siji
+  Browser .................... firefox
+  File Browser ............... pcmanfm
+  Editor ..................... neovim, leafpad
+  Music Player ............... mpd, ncmpcpp
+  Media Player ............... mpv
+  Launcher ................... rofi
+  Bar ........................ polybar
+  GTK Theme .................. numix
+  Icon Theme ................. numix
 
 ```
 
