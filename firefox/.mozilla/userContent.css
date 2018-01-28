@@ -1,0 +1,6 @@
+@import url('file:///home/matheus/.mozilla/colors.css');
+
+@-moz-document url(about:blank) {
+   body {
+       background-color: var(--bg) !important;
+}

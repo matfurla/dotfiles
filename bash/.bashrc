@@ -27,6 +27,7 @@ if [ "$color_prompt" = yes ]; then
     PS1="  ────╼  \[\e[0m\]"
 fi
 
+
 ## FUNCTIONS
 cd() {
     builtin cd "$@" && ls --color=auto
@@ -35,6 +36,21 @@ cd() {
 mkd() {
     mkdir -p $1
     cd $1
+}
+
+whereis() {
+    sudo find / -name $1
+}
+
+function man() {
+    env LESS_TERMCAP_mb=$'\E[01;31m' \
+    LESS_TERMCAP_md=$'\E[01;38;5;74m' \
+    LESS_TERMCAP_me=$'\E[0m' \
+    LESS_TERMCAP_se=$'\E[0m' \
+    LESS_TERMCAP_so=$'\E[38;5;246m' \
+    LESS_TERMCAP_ue=$'\E[0m' \
+    LESS_TERMCAP_us=$'\E[04;38;5;146m' \
+    man "$@"
 }
 
 function extract {
@@ -81,13 +97,20 @@ video2gif() {
   rm "${1}.png"
 }
 
+
 ## ALIASES
 alias sd='sudo'
 alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
-alias v='nvim'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias ld='ldmc -l'
 alias rd='sudo ldmc -r'
+alias chx='chmod +x'
+alias ch644='chmod 644'
+alias ch777='chmod 777'
 alias rb='sudo shutdown -r now'
 alias p='sudo shutdown -h now'
 
@@ -107,7 +130,7 @@ alias dt='cd $HOME/Desktop'
 alias df='cd $HOME/Dotfiles'
 alias dl='cd $HOME/Downloads'
 alias s='cd $HOME/.config/scripts'
-alias theme='cd $HOME/.urxvt'
+alias clr='cd $HOME/.urxvt'
 alias hd='cd /mnt'
 alias xload='xrdb -load $HOME/.Xresources'
 
@@ -120,11 +143,9 @@ alias up='amixer -q sset Master 5%+'
 alias down='amixer -q sset Master 5%-'
 alias mute='amixer -q sset Master toggle'
 
-alias rasp='ssh pi@192.168.88.245'
 
 ## EXPORT
 export TERM='xterm-256color'
-export BROWSER='firefox'
-export VISUAL='nvim'
-export EDITOR='nvim'
-export MPD_HOST=192.168.88.249
+export VISUAL='nano'
+export EDITOR='nano'
+export MPD_HOST=192.168.88.254

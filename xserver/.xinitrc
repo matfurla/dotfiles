@@ -10,7 +10,7 @@
 #  ░    ░   ▒ ░   ░   ░ ░  ▒ ░  ░       
 #  ░    ░   ░           ░  ░            
 
-## LOAD .XRESOURCES                                         
+## LOAD .XRESOURCES
 xrdb -load $HOME/.Xresources
 
 ## FONTS
@@ -34,6 +34,9 @@ mpd
 
 ## URXVT
 urxvtd -q -f -o
+
+## BAR
+bar
 
 ## SXHKD
 sxhkd &

@@ -5,7 +5,7 @@
 xrdb load ~/.Xresources
 
 # create the directory if it doesn't exist 
-dir=$HOME/.cache/tmp
+dir=$HOME/.cache
 if [ ! -d "{$dir}" ]; then
   mkdir -p ${dir}
 fi

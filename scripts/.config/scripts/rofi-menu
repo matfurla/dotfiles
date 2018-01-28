@@ -7,28 +7,31 @@ declare -A COMMANDS
 COMMANDS["->Bookmarks"]='rofi-bookmarks'
 LABELS["->Bookmarks"]=""
 
-COMMANDS["gg"]="$BROWSER https://www.google.com/search?q=\ \"\${input}\""
+COMMANDS["gg"]="xdg-open https://www.google.com/search?q=\ \"\${input}\""
 LABELS["->GG"]=""
 
-COMMANDS["yt"]="$BROWSER https://www.youtube.com/results?search_query=\ \"\${input}\""
+COMMANDS["yt"]="xdg-open https://www.youtube.com/results?search_query=\ \"\${input}\""
 LABELS["->Yt"]=""
 
-COMMANDS["g1"]="$BROWSER http://g1.globo.com/busca/?q=\ \"\${input}\""
+COMMANDS["g1"]="xdg-open http://g1.globo.com/busca/?q=\ \"\${input}\""
 LABELS["->G1"]=""
 
-COMMANDS["reddit"]="$BROWSER https://www.reddit.com/r/\ \"\${input}\""
+COMMANDS["reddit"]="xdg-open https://www.reddit.com/r/\ \"\${input}\""
 LABELS["->Reddit"]=""
 
-COMMANDS["ml"]="$BROWSER http://lista.mercadolivre.com.br/\ \"\${input}\""
+COMMANDS["ml"]="xdg-open http://lista.mercadolivre.com.br/\ \"\${input}\""
 LABELS["->ML"]=""
 
-COMMANDS["tpb"]="$BROWSER http://thepiratebay.org/search/\ \"\${input}\""
+COMMANDS["tpb"]="xdg-open http://thepiratebay.org/search/\ \"\${input}\""
 LABELS["->TPB"]=""
 
-COMMANDS["imdb"]="$BROWSER http://www.imdb.com/find?q=\ \"\${input}\""
+COMMANDS["1337"]="xdg-open https://dns1.1337x.io/search/\ \"\${input}\"/1/"
+LABELS["->1337"]=""
+
+COMMANDS["imdb"]="xdg-open http://www.imdb.com/find?q=\ \"\${input}\""
 LABELS["->IMDB"]=""
 
-COMMANDS["wiki"]="$BROWSER https://pt.wikipedia.org/wiki/\ \"\${input}\""
+COMMANDS["wiki"]="xdg-open https://pt.wikipedia.org/wiki/\ \"\${input}\""
 LABELS["->WIKI"]=""
 
 COMMANDS["->Pass"]='rofi-pass'
@@ -40,7 +43,6 @@ LABELS["->Screenshot"]=""
 COMMANDS["->Screenshot-Window"]='screenshot-selected'
 LABELS["->Screenshot-Window"]=""
 
-
 function print_menu()
 {
     for key in ${!LABELS[@]}
@@ -51,7 +53,6 @@ function print_menu()
 
 function start()
 {
-    #print_menu | rofi -dmenu -p "?=>" 
     print_menu | sort | rofi -dmenu -i -p "Executar:"
 }
 
@@ -59,7 +60,6 @@ value="$(start)"
 
 choice=${value%%\ *}
 input=${value:$((${#choice}+1))}
-
 
 ## Cancelled
 if test -z ${choice}

@@ -8,13 +8,14 @@ xrdb -load $HOME/.Xresources
 update-gtk
 
 ## CSS
-update-css
+#update-css
 
 ## POLYBAR
 update-mpd
-
-## BSPWM
-$HOME/.config/bspwm/bspwmrc
+bar
 
 ## WALLPAPER
 xsetroot -mod 10 2 -bg "$(xrdb -query|awk '/^\*color0:/ {print $2}')" -fg "$(xrdb -query|awk '/^\*color8:/ {print $2}')"
+
+## BSPWM
+$HOME/.config/bspwm/bspwmrc

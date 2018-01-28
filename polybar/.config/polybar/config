@@ -31,10 +31,11 @@ modules-left = bspwm mpd
 modules-center =
 modules-right = volume memory eth date
 
+
 ;; COLORS
 [colors]
 background = ${xrdb:background}
-foreground = #FFFFFF
+foreground = #ffffff
 blk = ${xrdb:color0}
 red = ${xrdb:color1}
 grn = ${xrdb:color2}
@@ -51,6 +52,7 @@ bblu = ${xrdb:color12}
 bmag = ${xrdb:color13}
 bcyn = ${xrdb:color14}
 bwht = ${xrdb:color15}
+
 
 ;; BSPWM
 [module/bspwm]
@@ -72,10 +74,11 @@ label-empty = %index%
 label-empty-foreground = ${colors.bblk}
 label-empty-padding = 2
 
+
 ;; MPD
 [module/mpd]
 type = internal/mpd
-host = 192.168.88.249
+host = 192.168.88.254
 format-online = <icon-prev> <toggle> <icon-next>  <label-song>
 
 icon-prev = "  "
@@ -101,6 +104,7 @@ include-file = $HOME/.config/polybar/mpd
 label-offline = mpd is offline
 label-offine-foreground = ${colors.blk}
 
+
 ;; XWINDOW
 [module/xwindow]
 type = internal/xwindow
@@ -110,6 +114,7 @@ label-maxlen = 100
 
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
+
 
 ;; VOLUME
 [module/volume]
@@ -126,6 +131,7 @@ format-muted-prefix-background = ${colors.bblk}
 label-muted-background = ${colors.red}
 label-muted = " muted "
 
+
 ;;MEMORY
 [module/memory]
 type = internal/memory
@@ -135,6 +141,7 @@ format-prefix = "  "
 format-prefix-background = ${colors.bblk}
 label-background = ${colors.ylw}
 label = " %gb_used% "
+
 
 ;; ETHERNET
 [module/eth]
@@ -146,6 +153,7 @@ format-connected-prefix = "  "
 format-connected-prefix-background = ${colors.bblk}
 label-connected-background = ${colors.grn}
 label-connected = " %local_ip% "
+
 
 ;; DATE
 [module/date]

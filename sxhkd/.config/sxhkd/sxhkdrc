@@ -24,7 +24,6 @@ super + {_,shift + }w
     bspc node -{c,k}
 
 
-
 #### STATE
 ## Window State
 super + {t,shift + t,s,f}
@@ -33,7 +32,6 @@ super + {t,shift + t,s,f}
 ## Flags
 super + ctrl + {x,y,z}
     bspc node -g {locked,sticky,private}
-
 
 
 #### FOCUS
@@ -68,7 +66,6 @@ super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} '^{1-9,10}'
 
 
-
 #### PRESELECT
 ## Preselect Direction
 super + ctrl + {h,j,k,l}
@@ -87,7 +84,6 @@ super + ctrl + shift + space
     bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 
-
 #### MOVE-RESIZE
 ## Expand Window
 super + alt + {h,j,k,l}
@@ -100,7 +96,6 @@ super + alt + shift + {h,j,k,l}
 ## Move Floating Window
 super + {h,j,k,l}
     bspc node -v {-20 0,0 20,0 -20,20 0}
-
 
 
 #### CUSTOM

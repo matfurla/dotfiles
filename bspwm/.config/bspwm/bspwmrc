@@ -31,6 +31,3 @@ bspc monitor -d 1 2 3 4 5
 
 bspc rule -a Gimp desktop='^5' state=floating follow=on
 bspc rule -a ::Pinentry state=floating
-
-## AUTOSTART
-bar
