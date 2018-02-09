@@ -16,9 +16,6 @@ LABELS["->Yt"]=""
 COMMANDS["g1"]="xdg-open http://g1.globo.com/busca/?q=\ \"\${input}\""
 LABELS["->G1"]=""
 
-COMMANDS["reddit"]="xdg-open https://www.reddit.com/r/\ \"\${input}\""
-LABELS["->Reddit"]=""
-
 COMMANDS["ml"]="xdg-open http://lista.mercadolivre.com.br/\ \"\${input}\""
 LABELS["->ML"]=""
 

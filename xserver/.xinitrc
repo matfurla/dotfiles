@@ -27,7 +27,8 @@ xrandr --output HDMI2 --set "Broadcast RGB" "Full"
 xsetroot -cursor_name left_ptr
 
 ## WALLPAPER
-xsetroot -mod 10 2 -bg "$(xrdb -query|awk '/^\*color0:/ {print $2}')" -fg "$(xrdb -query|awk '/^\*color8:/ {print $2}')"
+#xsetroot -mod 10 2 -bg "$(xrdb -query|awk '/^\*color0:/ {print $2}')" -fg "$(xrdb -query|awk '/^\*color8:/ {print $2}')"
+hsetroot -full "/home/matheus/Desktop/wall.png"
 
 ## MPD
 mpd

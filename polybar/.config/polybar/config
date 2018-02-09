@@ -10,32 +10,27 @@
 ;              ░ ░      ░  ░░ ░      ░            ░  ░   ░      
 ;                           ░ ░           ░                     
 
-;; GENERAL
 [bar/main]
 monitor = ${env:MONITOR:HDMI-2}
 width = 100%
-height = 21
+height = 22
 fixed-center = center
 background = ${colors.background}
 foreground = ${colors.foreground}
-border-size = 6
+border-size = 3
 border-color = ${colors.background}
-
 module-margin-left = 1
 module-margin-right = 1
-
-font-0 = terminus:style=regular:pixelsize=9:antialias=true;1
+font-0 = terminus:style=regular:pixelsize=9:antialias=true;2
 font-1 = siji:pixelsize=12:antialias=false;2
-
 modules-left = bspwm mpd
-modules-center =
+modules-center = xwindow
 modules-right = volume memory eth date
 
 
-;; COLORS
 [colors]
 background = ${xrdb:background}
-foreground = #ffffff
+foreground = ${xrdb:foreground}
 blk = ${xrdb:color0}
 red = ${xrdb:color1}
 grn = ${xrdb:color2}
@@ -54,118 +49,90 @@ bcyn = ${xrdb:color14}
 bwht = ${xrdb:color15}
 
 
-;; BSPWM
 [module/bspwm]
 type = internal/bspwm
-
 label-focused = %index%
 label-focused-background = ${colors.bblk}
 label-focused-foreground = ${colors.foreground}
 label-focused-padding = 2
-
 label-occupied = %index%
 label-occupied-padding = 2
-
 label-urgent = %index%!
 label-urgent-background = ${colors.red}
 label-urgent-padding = 2
-
 label-empty = %index%
 label-empty-foreground = ${colors.bblk}
 label-empty-padding = 2
 
 
-;; MPD
 [module/mpd]
 type = internal/mpd
 host = 192.168.88.254
 format-online = <icon-prev> <toggle> <icon-next>  <label-song>
-
 icon-prev = "  "
 icon-prev-background = ${colors.foreground}
 icon-prev-foreground = ${colors.background}
-
 icon-play = "  "
 icon-play-background = ${colors.red}
 icon-play-foreground = ${colors.foreground}
-
 icon-pause = "  "
 icon-pause-background = ${colors.cyn}
 icon-pause-foreground = ${colors.foreground}
-
 icon-next = "  "
 icon-next-background = ${colors.foreground}
 icon-next-foreground = ${colors.background}
-
 label-song-maxlen = 500
 label-song-ellipsis = false
 include-file = $HOME/.config/polybar/mpd
-
 label-offline = mpd is offline
 label-offine-foreground = ${colors.blk}
 
 
-;; XWINDOW
 [module/xwindow]
 type = internal/xwindow
-
 label = " %title% "
 label-maxlen = 100
-
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
 
 
-;; VOLUME
 [module/volume]
 type = internal/volume
-
 format-volume-prefix = "  "
 format-volume-prefix-background = ${colors.bblk}
 label-volume-background = ${colors.red}
 label-volume = " %percentage%% "
 format-volume = <label-volume>
-
 format-muted-prefix = "  "
 format-muted-prefix-background = ${colors.bblk}
 label-muted-background = ${colors.red}
 label-muted = " muted "
 
 
-;;MEMORY
 [module/memory]
 type = internal/memory
 interval = 2
-
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
 label-background = ${colors.ylw}
 label = " %gb_used% "
 
 
-;; ETHERNET
 [module/eth]
 type = internal/network
 interface = enp6s0
 interval = 30
-
 format-connected-prefix = "  "
 format-connected-prefix-background = ${colors.bblk}
 label-connected-background = ${colors.grn}
 label-connected = " %local_ip% "
 
 
-;; DATE
 [module/date]
 type = internal/date
 interval = 30
-
-date =
-date-alt = " %d/%m/%Y"
-
+date = " %d/%m"
 time = %H:%M
-time-alt = %H:%M
-
 format-prefix = "  "
 format-prefix-background = ${colors.bblk}
 label-background = ${colors.blu}

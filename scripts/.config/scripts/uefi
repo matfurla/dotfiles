@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo efibootmgr -c -d /dev/sda -p 1 -L "Void Linux" -l \vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img"

@@ -26,7 +26,7 @@ URxvt*font:             xft:terminus:size=9
 Xft.dpi:                96
 Xft.antialias:          true
 Xft.hinting:            true
-Xft.hintstyle:          hintfull
+Xft.hintstyle:          hintnone
 Xft.lcdfilter:          lcddefault
 Xft.rgba:               rgb
 
@@ -67,11 +67,11 @@ rofi.color-normal:      bg, fg, bg, red, fg
 rofi.color-active:      bg, fg, bg, bg, bg
 rofi.color-urgent:      bg, red, bg, red, fg
 
-rofi.font:              terminus 8
+rofi.font:              terminus 9
 rofi.lines:             10
 rofi.width:             30
 rofi.location:          2
-rofi.yoffset:           33
+rofi.yoffset:           28
 rofi.padding:           10
 rofi.terminal:          urxvtc
 rofi.hide-scrollbar:    true

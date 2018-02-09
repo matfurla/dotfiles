@@ -17,7 +17,7 @@
 ## GENERAL
 bspc config border_width           1
 bspc config window_gap         	   1
-bspc config top_padding        	   34
+bspc config top_padding        	   29
 bspc config left_padding       	   0
 bspc config bottom_padding    	   0
 bspc config split_ratio        	   0.50

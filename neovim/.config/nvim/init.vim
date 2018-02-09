@@ -14,7 +14,9 @@
 " Sets how many lines of history VIM has to remember
 set history=500
 
-colorscheme sourcerer
+set background=dark
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
 
 " This is extremely useful for indenation purposes
 " of several filetypes used in web development
@@ -38,11 +40,6 @@ set modifiable
 
 " This will highlight the current line your cursor is at
 set cursorline
-
-" This will highlight the current column your cursor is at
-" and it'll make it much easier to determine your closing tags
-" (along with matchtagalways) when code is properly indented
-set cursorcolumn
 
 " This will enable the usage of your mouse inside Vim in
 " terminal emulators that support it (gpm)

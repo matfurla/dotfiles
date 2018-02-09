@@ -7,9 +7,6 @@ xrdb -load $HOME/.Xresources
 ## GTK
 update-gtk
 
-## CSS
-#update-css
-
 ## POLYBAR
 update-mpd
 bar
